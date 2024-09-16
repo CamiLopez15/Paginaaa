@@ -1,0 +1,346 @@
+body {
+    font-family: 'PMingLiU-ExtB', serif;
+    background-color: #f2e8cf;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+/*Encabezadoooo*/
+
+header {
+    background-color: #878ba6;
+    padding: 20px;/*Tamaño morado*/
+    text-align: center;
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 100px;
+}
+
+header nav ul li a {/*Color texto*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.header-decor img {
+    width: 100%;
+    height: auto;
+}
+
+/*Cuerpo del main*/
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1 {/*El amor en tiempo de colera */
+    font-size: 7em;
+    margin-bottom: 10px;
+}
+
+.intro p {/*escoge la*/
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.historias {/*Separacion botones y personahjes */
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.historia img {/*Imagenes personajes florentino*/
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.historia1 img {/*Imagenes personajes fermina*/
+    width: 335px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.historia button {/*Florentino boton */
+    margin-top: 10px;
+    padding: 25px 20px;
+    background-color: #d07465;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.historia1 button {/*Fermina boton */
+    margin-top: 10px;
+    padding: 25px 20px;
+    background-color: #d07465;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Cuerpo de principal*/
+.cards-container {
+    width: 50%;
+    margin: 0 auto; /* Esto centra horizontalmente el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center; /* Asegura que el contenido dentro de cada tarjeta esté centrado */
+    background-color: #d9b6b0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.content {
+    flex: 2;
+    color: #3b2d29;
+    margin-right: 20px; /* Añade espacio entre el texto y la imagen */
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.como-funciona p {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 200; /* Ajusta el tamaño de la imagen según lo necesario */
+    height: auto;
+}
+
+.Botoness button {/*Siguiente pagina boton */
+    margin-top: 10px;
+    padding: 25px 20px;
+    background-color: #d07465;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    cursor: pointer;
+}
+/*Ferminaaa paginaaa*/
+
+.containerFer {
+    background-color: #fff;
+    border: 2px solid #d8d8d8;
+    margin: 0 auto; /* Esto centra horizontalmente el contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.containerFer {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contentFer {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.audio-player {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+    max-width: 300px;
+}
+
+
+/*Cartassss*/
+
+.zigzag-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card1 {
+    position: relative;
+    width: 500px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.card1:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.card1:nth-child(even) {
+    align-self: flex-end;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 9px solid #d8d8d8;
+    border-radius: 8px;
+}
+
+.download-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-icon:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Lugares*/
+
+
+ /* Estilos del contenedor del carrusel */
+ .carousel {
+    position: relative;
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilos del contenedor del carrusel */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center; /* Centrar el contenido dentro del carrusel */
+}
+
+/* Ajustes de las imágenes */
+.carousel img {
+    margin: auto;
+    width: auto;
+    height: auto; /* Fijar la altura de las imágenes */
+    object-fit: cover; /* Ajustar las imágenes para que no se distorsionen */
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+/* Estilos para los botones de navegación */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos del reproductor de audio */
+.audio-container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 20px; /* Ajusta la posición según tus necesidades */
+    left: 20px;
+    color: white; /* Cambia el color según el fondo */
+    font-size: 24px; /* Ajusta el tamaño de fuente según tus necesidades */
+}
+
+/*Lo ultimo */
+footer {
+    background-color: #878ba6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+

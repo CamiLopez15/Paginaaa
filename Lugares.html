@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Amor en los Tiempos Digitales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="main.html">Versiones</a></li>
+                <li><a href="Lugares.html">Lugares</a></li>
+                <li><a href="Cartas.html">Fragmentos</a></li>
+            </ul>
+        </nav>
+        <div class="header-decor">
+        </div>
+        
+    </header>
+
+    <main>
+        <img src="header-image.png" alt="Decoración de flores">
+        <section class="intro">
+            <h1>El Amor en los Tiempos Digitales</h1>
+            <p>Lugares</p>
+        </section>
+
+ 
+  <!-- Carrusel de imágenes con título -->
+  <div class="carousel-container">
+    <!-- Título del carrusel -->
+    <h2 class="carousel-title" id="carouselTitle">Título de la Imagen 1</h2>
+
+    <!-- Carrusel de imágenes -->
+    <div class="carousel">
+        <img class="active" src="Img\CasaLorenzo.png" alt="Imagen 1">
+        <img src="Img\Tienda.png" alt="Imagen 2">
+        <img src="Img\Barco.png" alt="Imagen 3">
+        <img src="imagen4.jpg" alt="Imagen 4">
+
+        <!-- Botones de navegación -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+</div>
+
+<!-- Contenedor del audio -->
+<div class="audio-container">
+    <audio id="audioPlayer" controls>
+        <source id="audioSource" src="Audios/HS1_mezclaIntento1.wav" type="audio/wav">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</div>
+
+<!-- Vincular el archivo JS si lo tienes separado -->
+<script src="scripts.js"></script>
+
+</body>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Amor en los Tiempos Digitales, Universidad Militar Nueva Granada</p>
+    </footer>
+</body>
+</html>

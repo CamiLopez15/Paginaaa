@@ -9,10 +9,10 @@ const audios = [
 
 // Títulos para cada imagen
 const titles = [
-    'Txddddd',  // Título para la imagen 1
-    'Título de',  // Título para la imagen 2
-    'Título de la Imagen 3',  // Título para la imagen 3
-    'Título de la Imagen 4'   // Título para la imagen 4
+    'Casa de Lorenzo',  // Título para la imagen 1
+    'Tienda',  // Título para la imagen 2
+    'Casa de Juvenal',  // Título para la imagen 3
+    'Barco'   // Título para la imagen 4
 ];
 
 // Obtener los elementos del DOM

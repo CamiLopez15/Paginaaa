@@ -245,17 +245,6 @@ audio {
 /* Lugares*/
 
 
- /* Estilos del contenedor del carrusel */
- .carousel {
-    position: relative;
-    max-width: 600px;
-    height: auto;
-    margin: auto;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
 /* Estilos del contenedor del carrusel */
 .carousel {
     position: relative;
@@ -271,8 +260,8 @@ audio {
 /* Ajustes de las imágenes */
 .carousel img {
     margin: auto;
-    width: auto;
-    height: auto; /* Fijar la altura de las imágenes */
+    width: 550px;
+    height: 550px; /* Fijar la altura de las imágenes */
     object-fit: cover; /* Ajustar las imágenes para que no se distorsionen */
     display: none;
 }

@@ -1,20 +1,38 @@
-@media (min-width: 1280px) and (max-width: 1920px) {
+/* Estilo general para todos los dispositivos */
 body {
+
     font-family: 'PMingLiU-ExtB', serif;
     background-color: #f2e8cf;
     color: #000000;
     margin: 0;
     padding: 0;
-    /* Para portátiles (ancho de pantalla entre 1280px y 1920px) */
-}   
 }
+
+@media (min-width: 370px) and (max-width: 1280px) {
+    body {
+
+        flex-wrap: wrap;  
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
 /*Encabezadoooo*/
 
 header {
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */         /* Alinea verticalmente los elementos */
+    width: 100%;      
     background-color: #878ba6;
-    padding: 20px;/*Tamaño morado*/
+    padding: 10px 20px; ;/*Tamaño morado*/
     text-align: center;
     font-size: 2.5em;
+}
+@media (max-width: 1280px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;            /* Permite que los elementos se ajusten si es necesario */
+    }
+
 }
 
 header nav ul {
@@ -29,13 +47,10 @@ header nav ul li {
 
 header nav ul li a {/*Color texto*/
     color: rgb(0, 0, 0);
+    font-weight: bold;
     text-decoration: none;
 }
 
-.header-decor img {
-    width: 100%;
-    height: auto;
-}
 
 /*Cuerpo del main*/
 main {
@@ -44,30 +59,30 @@ main {
 }
 
 .intro h1 {/*El amor en tiempo de colera */
-    font-size: 7em;
+    font-size: 4em;
     margin-bottom: 10px;
 }
 
 .intro p {/*escoge la*/
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 40px;
 }
 
-.historias {/*Separacion botones y personahjes */
+.historias {/*Separacion botones y personajes */
     display: flex;
     justify-content: center;
     gap: 200px;
 }
 
 .historia img {/*Imagenes personajes florentino*/
-    width: 300px;
+    width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 .historia1 img {/*Imagenes personajes fermina*/
-    width: 335px;
+    width: 224px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -79,7 +94,7 @@ main {
     background-color: #d07465;
     border: none;
     color: rgb(0, 0, 0);
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -90,7 +105,7 @@ main {
     background-color: #d07465;
     border: none;
     color: rgb(0, 0, 0);
-    font-size: 2em;
+    font-size: 1.5em;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -156,7 +171,8 @@ main {
     background-color: #d07465;
     border: none;
     color: rgb(0, 0, 0);
-    font-size: 2em;
+    font-size: 1.5em;
+    border-radius: 10px;
     cursor: pointer;
 }
 /*Ferminaaa paginaaa*/
@@ -329,6 +345,13 @@ footer {
     text-align: center;
     margin-top: 50px;
     font-size: 1.5em;
+}
+@media (max-width: 370px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;            /* Permite que los elementos se ajusten si es necesario */
+    }
+
 }
 
 img{

@@ -1,4 +1,6 @@
 body {
+    /* Para portátiles (ancho de pantalla entre 1280px y 1920px) */
+@media (min-width: 1280px) and (max-width: 1920px) {
     font-family: 'PMingLiU-ExtB', serif;
     background-color: #f2e8cf;
     color: #000000;

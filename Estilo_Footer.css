@@ -1,4 +1,5 @@
 .Footer {
+    margin-top: 20px;
     width: 1000px; /* Ancho máximo del header */
     padding: 15px 135px 0px 135px; /* Espaciado interno */
     background: #878BA6;
@@ -7,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 36px;
-    margin: 0 auto; /* Centra el footer cuando sea menor a 1280px */
+   
   }
 
   

@@ -40,4 +40,14 @@
     cursor: pointer;
 }
 
+.historia button:hover{
+    color: #c04937;
+    background-color: #ffc8bb;
+}
+
+.historia1 button:hover{
+    color: #c04937;
+    background-color: #ffc8bb;
+}
+
 

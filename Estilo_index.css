@@ -1,0 +1,65 @@
+/*Cuerpo de principal*/
+.cards-container {
+    width: 50%;
+    margin: 0 auto; /* Esto centra horizontalmente el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center; /* Asegura que el contenido dentro de cada tarjeta esté centrado */
+    background-color: #d9b6b0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.content {
+    flex: 2;
+    color: #3b2d29;
+    margin-right: 20px; /* Añade espacio entre el texto y la imagen */
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.como-funciona p {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    width: 200; /* Ajusta el tamaño de la imagen según lo necesario */
+    height: auto;
+}
+
+.Botoness button {/*Siguiente pagina boton */
+    margin-top: 10px;
+    padding: 25px 20px;
+    background-color: #d07465;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+}

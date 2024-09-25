@@ -1,5 +1,5 @@
 .Header {
-    padding: 20px;
+   
     position: fixed; /* Mantiene el header fijo en la parte superior */
     top: 0; /* Coloca el header en la parte superior */
     transform: translateX(-50%); /* Ajusta el centrado */

@@ -1,13 +1,13 @@
 .Footer {
-    padding: 20px;
-    max-width: 1280px; /* Ancho máximo del header */
-    background-color: #878BA6;
+    width: 1000px; /* Ancho máximo del header */
+    padding: 24px 135px 24px 135px; /* Espaciado interno */
+    background: #878BA6;
     display: flex;
-    justify-content: row;
+    flex-direction: column;
     align-items: center;
-    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-    font-weight: bold;
+    justify-content: space-between;
+    gap: 36px;
+    margin: 0 auto; /* Centra el footer cuando sea menor a 1280px */
   }
 
   

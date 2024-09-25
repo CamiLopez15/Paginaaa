@@ -71,9 +71,7 @@ audio {
     bottom: 20px; /* Ajusta la posición según tus necesidades */
     left: 20px;
     color: white; /* Cambia el color según el fondo */
-    font-size: 24px; /* Ajusta el tamaño de fuente según tus necesidades */
 }
-
 .modal {
     display:flex;
     position: relative;
@@ -90,7 +88,6 @@ audio {
 .modal-content {
     display: flex;
     color: #000000;
-    font-family: Montserrat;
     font-size: 50px;
     font-style: normal;
     font-weight: 600;

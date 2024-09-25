@@ -27,20 +27,7 @@
     margin-right: 20px; /* Añade espacio entre el texto y la imagen */
 }
 
-.content h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
 
-.como-funciona p {
-    font-size: 3em;
-    margin-bottom: 40px;
-}
-
-.content p {
-    font-size: 30px;
-    line-height: 1.5;
-}
 
 .image-container {
     flex: 1;
@@ -49,7 +36,7 @@
     align-items: center;
 }
 .image-container img {
-    width: 200px; /* Ajusta el tamaño de la imagen según lo necesario */
+    width: 150px; /* Ajusta el tamaño de la imagen según lo necesario */
     height: auto;
 }
 

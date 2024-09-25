@@ -73,6 +73,7 @@ audio {
     color: white; /* Cambia el color según el fondo */
 }
 .modal {
+    margin-top: 20px;
     display:flex;
     position: relative;
     width: 850px;

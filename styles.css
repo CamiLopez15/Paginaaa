@@ -1,5 +1,6 @@
 /* Estilo general para todos los dispositivos */
 body {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,8 +8,9 @@ body {
     font-family: 'PMingLiU-ExtB', serif;
     background-color: #f2e8cf;
     color: #000000;
-    margin: 0;
-    padding: 0;
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
 }
 
 @media (min-width: 370px) and (max-width: 1280px) {
@@ -20,22 +22,109 @@ body {
     }
 }
 
+/* ACHES H1... */
+  
+:root {
+    --h-1-font-family: "PMingLiU-ExtB", serif;
+    --h-1-font-weight: 700;
+    --h-1-font-size: 42px;
+    --h-1-letter-spacing: 0px;
+    --h-1-line-height: 66px;
+    --h-1-font-style: normal;
+    
+    --h-2-font-family: "PMingLiU-ExtB", serif;
+    --h-2-font-weight: 400;
+    --h-2-font-size: 18px;
+    --h-2-letter-spacing: 0px;
+    --h-2-line-height: 30px;
+    --h-2-font-style: normal;
+    
+    --h-3-font-family: "PMingLiU-ExtB", serif;
+    --h-3-font-weight: 500;
+    --h-3-font-size: 16px;
+    --h-3-letter-spacing: 0px;
+    --h-3-line-height: 18px;
+    --h-3-font-style: normal;
+    
+    --h-4-font-family: "PMingLiU-ExtB", serif;
+    --h-4-font-weight: 700;
+    --h-4-font-size: 18px;
+    --h-4-letter-spacing: 0px;
+    --h-4-line-height: 18px;
+    --h-4-font-style: normal;
+    
+    --h-5-font-family: "PMingLiU-ExtB", serif;
+    --h-5-font-weight: 400;
+    --h-5-font-size: 18px;
+    --h-5-letter-spacing: 0px;
+    --h-5-line-height: 18px;
+    --h-5-font-style: normal;
+    
+    --h-6-font-family: "PMingLiU-ExtB", serif;
+    --h-6-font-weight: 900;
+    --h-6-font-size: 25px;
+    --h-6-letter-spacing: 1.75px;
+    --h-6-line-height: normal;
+    --h-6-font-style: normal;
+  }
+  
+  h1 {
+    font-family: var(--h-1-font-family);
+    font-weight: var(--h-1-font-weight);
+    font-size: var(--h-1-font-size);
+    letter-spacing: var(--h-1-letter-spacing);
+    line-height: var(--h-1-line-height);
+    font-style: var(--h-1-font-style);
+    color: #000000;
+  }
+  
+  h2 {
+    font-family: var(--h-2-font-family);
+    font-weight: var(--h-2-font-weight);
+    font-size: var(--h-2-font-size);
+    letter-spacing: var(--h-2-letter-spacing);
+    line-height: var(--h-2-line-height);
+    font-style: var(--h-2-font-style);
+  }
+  
+  h3 {
+    font-family: var(--h-3-font-family);
+    font-weight: var(--h-3-font-weight);
+    font-size: var(--h-3-font-size);
+    letter-spacing: var(--h-3-letter-spacing);
+    line-height: var(--h-3-line-height);
+    font-style: var(--h-3-font-style);
+  }
+  
+  h4 {
+    font-family: var(--h-4-font-family);
+    font-weight: var(--h-4-font-weight);
+    font-size: var(--h-4-font-size);
+    letter-spacing: var(--h-4-letter-spacing);
+    line-height: var(--h-4-line-height);
+    font-style: var(--h-4-font-style);
+  }
+  
+  h5 {
+    font-family: var(--h-5-font-family);
+    font-weight: var(--h-5-font-weight);
+    font-size: var(--h-5-font-size);
+    letter-spacing: var(--h-5-letter-spacing);
+    line-height: var(--h-5-line-height);
+    font-style: var(--h-5-font-style);
+  }
+  
+  h6 {
+    font-family: var(--h-6-font-family);
+    font-weight: var(--h-6-font-weight);
+    font-size: var(--h-6-font-size);
+    letter-spacing: var(--h-6-letter-spacing);
+    line-height: var(--h-6-line-height);
+    font-style: var(--h-6-font-style);
+  }
 
-/*Cuerpo del main*/
-main {
-    padding: 20px;
-    text-align: center;
-}
 
-.intro h1 {/*El amor en tiempo de colera */
-    font-size: 4em;
-    margin-bottom: 10px;
-}
 
-.intro p {/*escoge la*/
-    font-size: 2em;
-    margin-bottom: 40px;
-}
 
 
 

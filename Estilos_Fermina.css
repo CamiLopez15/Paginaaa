@@ -1,0 +1,35 @@
+/*Ferminaaa paginaaa*/
+
+.containerFer {
+    background-color: #fff;
+    border: 2px solid #d8d8d8;
+    margin: 0 auto; /* Esto centra horizontalmente el contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.containerFer {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contentFer {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.audio-player {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+    max-width: 300px;
+}

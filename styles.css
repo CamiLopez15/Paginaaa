@@ -27,7 +27,7 @@ body {
 :root {
     --h-1-font-family: "PMingLiU-ExtB", serif;
     --h-1-font-weight: 700;
-    --h-1-font-size: 42px;
+    --h-1-font-size: 56px;
     --h-1-letter-spacing: 0px;
     --h-1-line-height: 66px;
     --h-1-font-style: normal;
@@ -75,7 +75,6 @@ body {
     letter-spacing: var(--h-1-letter-spacing);
     line-height: var(--h-1-line-height);
     font-style: var(--h-1-font-style);
-    color: #000000;
   }
   
   h2 {
@@ -122,7 +121,6 @@ body {
     line-height: var(--h-6-line-height);
     font-style: var(--h-6-font-style);
   }
-
 
 
 

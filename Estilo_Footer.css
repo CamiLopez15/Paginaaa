@@ -1,6 +1,6 @@
 .Footer {
     width: 1000px; /* Ancho máximo del header */
-    padding: 24px 135px 24px 135px; /* Espaciado interno */
+    padding: 15px 135px 0px 135px; /* Espaciado interno */
     background: #878BA6;
     display: flex;
     flex-direction: column;

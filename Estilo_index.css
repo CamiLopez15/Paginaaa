@@ -63,3 +63,8 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.Botoness button:hover{
+    color: #c04937;
+    background-color: #ffc8bb;
+}

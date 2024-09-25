@@ -1,0 +1,44 @@
+/*Cartassss*/
+
+.zigzag-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card1 {
+    position: relative;
+    width: 500px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.card1:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.card1:nth-child(even) {
+    align-self: flex-end;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 9px solid #d8d8d8;
+    border-radius: 8px;
+}
+
+.download-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.3s;
+}

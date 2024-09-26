@@ -1,14 +1,11 @@
 .Footer {
+  height: 80px; /* Altura del header */
     position: relative; /* No es fijo, sigue el flujo del documento */
-    width: calc(100% - 0px); /* Ancho total */
-    height: -80px; /* Altura del footer */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
     font-weight: bold;
-    margin-top: 20px; /* Espacio antes del footer para separarlo del contenido */
-}
+  }
     
   @media (min-width: 370px) and (max-width: 1280px) {
     body {
@@ -16,7 +13,7 @@
         flex-wrap: wrap;  
         font-size: 16px;
         padding: 20px;
-    }
+    
 }
   /* ACHES H1... */
   

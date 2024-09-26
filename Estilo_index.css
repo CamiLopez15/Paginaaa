@@ -1,6 +1,6 @@
 /*Cuerpo de principal*/
 .cards-container {
-    width: 50%;
+    width: 90%;
     margin: 0 auto; /* Esto centra horizontalmente el contenedor */
     display: flex;
     flex-direction: column;
@@ -8,11 +8,20 @@
     justify-content: center;
 }
 
+@media (min-width: 375px) and (max-width: 1280px) {
+    .cards-container {
+
+        flex-wrap: wrap;  
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
 .card {
     display: flex;
     justify-content: space-between;;
     align-items: center; /* Asegura que el contenido dentro de cada tarjeta esté centrado */
-    background-color: #d9b6b0;
+    background-color: #ffc8bb;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 20px;
@@ -20,6 +29,20 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
 }
+
+.card:hover {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center; /* Asegura que el contenido dentro de cada tarjeta esté centrado */
+    background-color: #ca6657;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
 
 .content {
     flex: 2;
@@ -38,6 +61,26 @@
 .image-container img {
     width: 150px; /* Ajusta el tamaño de la imagen según lo necesario */
     height: auto;
+}
+
+
+
+@media (min-width: 375px) and (max-width: 1280px) {
+    .card {
+
+        flex-wrap: wrap;  
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1280px) {
+    .content {
+
+        flex-wrap: wrap;  
+        font-size: 16px;
+        padding: 20px;
+    }
 }
 
 .Botoness button {/*Siguiente pagina boton */

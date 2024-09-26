@@ -36,6 +36,7 @@
     justify-content: space-between;
     align-items: center; /* Asegura que el contenido dentro de cada tarjeta esté centrado */
     background: rgba(255, 192, 203, 0.5); /* Fondo rosado con 50% de transparencia */
+    font-weight: bold;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 20px;
@@ -43,6 +44,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover h2 {
+    font-weight: bold;
+}
 
 .content {
     flex: 2;

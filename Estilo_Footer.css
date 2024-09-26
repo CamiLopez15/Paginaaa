@@ -1,15 +1,15 @@
 .Footer {
-  margin-top: 20px;
-  width:20000px ; /* Ancho fijo de 1280px */
-  background: #878BA6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    position: relative; /* No es fijo, sigue el flujo del documento */
+    width: calc(100% - 0px); /* Ancho total */
+    height: -80px; /* Altura del footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    font-weight: bold;
+    margin-top: 20px; /* Espacio antes del footer para separarlo del contenido */
 }
-
-  
+    
   @media (min-width: 370px) and (max-width: 1280px) {
     body {
 

@@ -1,10 +1,9 @@
 .Header {
-   
+   width:20000px ; /* Ancho fijo de 1280px */
     position: fixed; /* Mantiene el header fijo en la parte superior */
     top: 0; /* Coloca el header en la parte superior */
     transform: translateX(-50%); /* Ajusta el centrado */
-    width: calc(100% - 10px); /* Ancho total menos márgenes (80px a cada lado) */
-    max-width: 1280px; /* Ancho máximo del header */
+    width: calc(100% - 0px); /* Ancho total menos márgenes (80px a cada lado) */
     height: 80px; /* Altura del header */
     background-color: #878BA6;
     display: flex;
@@ -21,7 +20,7 @@ header nav ul li {
 }
 
 
-@media (min-width: 370px) and (max-width: 1280px) {
+@media (min-width: 37px) and (max-width: 1280px) {
   body {
 
       flex-wrap: wrap;  

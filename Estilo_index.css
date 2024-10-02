@@ -34,8 +34,19 @@
     padding: 20px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
 }
+.card p{
+    font-size: 20px;
+
+    color: rgb(86, 63, 30);
+}
+
+.card h2{
+    font-size: 27px;
+    font-weight: bold;
+    color: rgb(86, 63, 30);
+}
+
 
 .card:hover {
     transform: scale(1.05); /* Aumenta el tamaño ligeramente al pasar el cursor */

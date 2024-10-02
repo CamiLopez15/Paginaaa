@@ -8,14 +8,15 @@
   width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
   max-width: 100%; /* Evita que el header sea más ancho que la pantalla */
   height: 100px;
-  background-color: #5d6a98;
+  background-color: #5d6a98 ;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-weight: bold ; /* Previene el desplazamiento lateral */
+  font-weight: bold ;
+  color: beige; /* Previene el desplazamiento lateral */
 }
 
 header nav ul li {
@@ -24,11 +25,12 @@ header nav ul li {
 }
 
 nav a {
-  color: rgb(0, 0, 0);
+  color: beige;
   text-decoration: none;
   font-size: 20px;
   padding: 10px;
   transition: color 0.3s ease;
+  letter-spacing: 3px;
 }
 
 /* Cambiar el color al pasar el ratón por encima */
@@ -37,14 +39,14 @@ nav a:hover {
 }
 
 
-@media (min-width: 37px) and (max-width: 1280px) {
+/*@media (min-width: 37px) and (max-width: 1280px) {
   body {
 
       flex-wrap: wrap;  
       font-size: 16px;
       padding: 20px;
   }
-}
+}*/
   /* ACHES H1... */
   
   :root {

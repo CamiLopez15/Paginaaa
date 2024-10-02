@@ -1,4 +1,3 @@
-
 body {
     margin-top: 100px;
     display: flex;
@@ -12,6 +11,17 @@ body {
     padding: 20px;
     text-align: center;
 }
+ 
+#particle-canvas {
+    position: absolute; /* Para que ocupe el fondo */
+    top: 0;
+    left: 0;
+    width: 2500px;
+    height: 1500px;
+    z-index: 1; /* Z-index bajo para estar detrás */
+    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%,rgb(233, 152, 233) 100%);
+  }
+
 
 @media (min-width: 370px) and (max-width: 1280px) {
     body {

@@ -1,21 +1,39 @@
 .Header {
-    position: fixed; /* Mantiene el header fijo en la parte superior */
-    top: 0; /* Coloca el header en la parte superior */
-    transform: translateX(-50%); /* Ajusta el centrado */
-    width: calc(100% - 0px); /* Ancho total menos márgenes (80px a cada lado) */
-    height: 80px; /* Altura del header */
-    background-color: #878BA6;
-    display: flex;
-    justify-content: row;
-    align-items: center;
-    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-    font-weight: bold;
-  }
+  padding: 2px 48px;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  max-width: 100%; /* Evita que el header sea más ancho que la pantalla */
+  height: 100px;
+  background-color: #5d6a98;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-weight: bold ; /* Previene el desplazamiento lateral */
+}
 
 header nav ul li {
   display: inline;
   margin: 100px;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Cambiar el color al pasar el ratón por encima */
+nav a:hover {
+  color: #8B0000;
 }
 
 
@@ -129,15 +147,4 @@ header nav ul li {
   }
   
   /*Cambio de color xddd*/
-nav a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
 
-/* Cambiar el color al pasar el ratón por encima */
-nav a:hover {
-    color: #8B0000;
-}

@@ -86,19 +86,3 @@
         padding: 20px;
     }
 }
-
-.Botoness button {/*Siguiente pagina boton */
-    margin-top: 10px;
-    padding: 25px 20px;
-    background-color: #d07465;
-    border: none;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.Botoness button:hover{
-
-        color: #c04937;
-    background-color: #ffc8bb;
-}

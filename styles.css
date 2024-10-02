@@ -135,10 +135,11 @@ body {
   button{
     width:200px;
     height:50px;
-    background: linear-gradient(to left top, #de94a7 30%, #c75d5d 50%);
+    font-size: 20px;
+    background: linear-gradient(to left top, #b977cc 20%, #5d6a98 50%);
     border-style: none;
-    color: #000;;
-    font-weight: bold;
+    color: #fffdd2;;
+    font-family: "PMingLiU-ExtB", serifs;
     cursor: pointer;
     position: relative;
     padding: 0px;

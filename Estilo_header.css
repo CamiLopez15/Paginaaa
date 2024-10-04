@@ -1,27 +1,38 @@
+/* Estilo principal del header */
 .Header {
-  padding: 2px 48px;
+  display: flex;
+  padding: 0px 100px;
   position: fixed;
-  margin: 0 auto;
   top: 0;
   left: 0;
   right: 0;
   width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
-  max-width: 100%; /* Evita que el header sea más ancho que la pantalla */
   height: 100px;
-  background-color: #5d6a98 ;
-  display: flex;
-  justify-content: space-between;
+  background-color: #5d6a98; /* Color oscuro y elegante */
+  justify-content:center;
   align-items: center;
   z-index: 1000;
   box-sizing: border-box;
+  font-weight: bold;
+  color: beige;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #5d6a98, #aa4a44); /* Degradado elegante */
   overflow-x: hidden;
-  font-weight: bold ;
-  color: beige; /* Previene el desplazamiento lateral */
+  animation: backgroundScroll 10s infinite alternate;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 100px;
+/* Estilo del nav */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul li {
+  margin: 0 20px;
 }
 
 nav a {
@@ -29,13 +40,45 @@ nav a {
   text-decoration: none;
   font-size: 20px;
   padding: 10px;
-  transition: color 0.3s ease;
-  letter-spacing: 3px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  letter-spacing: 2px;
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 /* Cambiar el color al pasar el ratón por encima */
 nav a:hover {
-  color: #8B0000;
+  color: #ffcccb;
+  transform: translateY(-5px);
+}
+
+/* Línea animada debajo del enlace en hover */
+nav a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #8B0000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Animación de desplazamiento suave del fondo */
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 

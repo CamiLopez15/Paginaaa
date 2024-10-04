@@ -12,13 +12,8 @@ body {
     text-align: center;
 }
 
-body {
-    cursor: url('Img/Cursor.png'), auto; /* URL de la imagen y fallback en caso de que no se cargue */
-}
-
-
-button {
-    cursor: url('Img/Cursor.png'), pointer; /* Usar 'pointer' como fallback */
+body, button, a {
+    cursor: url('Img/Cursor2.png'), auto;
 }
  
 #flower-canvas {
@@ -141,7 +136,7 @@ button {
     font-style: var(--h-6-font-style);
   }
 
-  button {
+button {
     width: 200px;
     height: 50px;
     font-size: 20px;

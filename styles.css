@@ -12,7 +12,7 @@ body {
     text-align: center;
 }
  
-#particle-canvas {
+#flower-canvas {
     position: absolute; /* Para que ocupe el fondo */
     top: 0;
     left: 0;

@@ -19,7 +19,7 @@ body {
     width: 2500px;
     height: 1500px;
     z-index: 1; /* Z-index bajo para estar detrás */
-    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%,rgb(240, 117, 175) 100%);
+    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%,rgb(255, 195, 223) 100%);
   }
 
 

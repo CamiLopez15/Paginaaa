@@ -18,13 +18,13 @@ function randomNormal(o) {
 }
 
 const NUM_FLOWERS = 600; // Number of flowers
-const FLOWER_SIZE = 0.5; // Size of flowers
+const FLOWER_SIZE = 0.7; // Size of flowers
 const SPEED = 20000; // Duration of flower movement in milliseconds
 
 let flowers = []; // Array to hold flower objects
 let flowerImage = new Image(); // Image object for the flower
 
-flowerImage.src = 'Img/Floress.png'; // Path to your flower image
+flowerImage.src = 'Img/Flor2.png'; // Path to your flower image
 
 function rand(low, high) {
   return Math.random() * (high - low) + low;

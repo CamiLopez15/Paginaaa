@@ -1,12 +1,17 @@
-footer {
-  
-  color: rgb(0, 0, 0); /* Cambia el color del texto */
-  text-align: center;
-  padding: 10px 0;
-  position: relative; /* Asegúrate de que no esté oculta */
-  bottom: 0;
-  width: 100%;
+.Footer {
+  color: rgb(0, 0, 0);
+  display: flex;
+  padding: 0px 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  justify-content:center;
+  align-items: center;
+  z-index: 1000;
 }
+
   /* ACHES H1... */
   
   :root {

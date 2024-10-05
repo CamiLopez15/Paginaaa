@@ -7,60 +7,82 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Estilos_lugares.css">
-
     <script>
         $(document).ready(function () {
-          // Cargar el header desde header.html 
-          $('Header').load('Header.html');
-          // Cargar el footer desde footer.html
-          $('Footer').load('Footer.html');
+          $('header').load('Header.html');
+          $('footer').load('Footer.html');
         });
-      </script>
-
+    </script>
 </head>
 <body>
     <header></header>
-       
+    <section class="intro">
+        <h1>El Amor en los Tiempos Digitales</h1>
+        <h4>Lugares</h4>
+    </section>
 
-        <div id="Satisfaccion" class="modal">
-            <div class="modal-content">
-                SEGUIMOS TRABAJANDO, ¡ESPÉRANOS PRONTO!
+    <div class="book-container">
+        <div class="book">
+            <!-- Portada -->
+            <div class="page" id="page1">
+                <div class="front-content">
+                    <img src="Img/Barco.png" alt="Imagen del Barco">
+                    <p>Descripción del Barco.</p>
+                </div>
+                <!-- Primera página -->
+                <div class="back-content">
+                    <h2>Título de la Página 1</h2>
+                    <p>Texto adicional sobre el barco.</p>
+                    <audio controls class="audio-player">
+                        <source src="Audios\Fermina 4.wav" type="audio/wav">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+            <!-- Segunda página -->
+            <div class="page" id="page2">
+                <div class="front-content">
+                    <img src="Img/Barco.png" alt="Otra imagen del Barco">
+                    <p>Descripción adicional del Barco.</p>
+                </div>
+                
+                <div class="back-content">
+                    <h2>Título de la Página 2</h2>
+                    <p>Más detalles del barco.</p>
+                    <audio controls class="audio-player">
+                        <source src="Audios\Fermina 4.wav" type="audio/wav">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Tecer página -->
+            <div class="page" id="page3">
+                <div class="front-content">
+                    <img src="Img/Barco.png" alt="Otra imagen del Barco">
+                    <p>Descripción adicional del Barco.</p>
+                </div>
+                
+                <div class="back-content">
+                    <h2>Título de la Página 2</h2>
+                    <p>Más detalles del barco.</p>
+                    <audio controls>
+                        <source src="Audios\Fermina 4.wav" type="audio/wav">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
             </div>
         </div>
-
-        <section class="intro">
-            <h1>El Amor en los Tiempos Digitales</h1>
-            <h4>Lugares</h4>
-        </section>
-
- 
-  <!-- Carrusel de imágenes con título -->
-    <div class="carousel-container">
-    <!-- Título del carrusel -->
-        <h2 class="carousel-title" id="carouselTitle">Título de la Imagen 1</h2>
-
-    <!-- Carrusel de imágenes -->
-        <div class="carousel">
-            <img class="active" src="Img\CasaLorenzo.png" alt="Imagen 1">
-            <img src="Img\Tienda.png" alt="Imagen 2">
-            <img src="Img\CasaJuvenal.png" alt="Imagen 3">
-            <img src="Img\Barco.png" alt="Imagen 4">
-
-        <!-- Botones de navegación -->
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
-
-<!-- Contenedor del audio -->
-    <div class="audio-container">
-        <audio id="audioPlayer" controls>
-            <source id="audioSource" src="Audios/HS1_mezclaIntento1.wav" type="audio/wav">
-                Tu navegador no soporta el elemento de audio.
-            </audio>
     </div>
-<!-- Vincular el archivo JS si lo tienes separado -->
+    
+    <!-- Botones de Navegación -->
+    <div class="nav-buttons">
+        <button onclick="prevPage()">Página Anterior</button>
+        <button onclick="nextPage()">Página Siguiente</button>
+    </div>
+
     <script src="scripts.js"></script>
     <script src="Body.js"></script>
 </body>
-      <footer></footer>
+<footer></footer>
 </html>

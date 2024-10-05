@@ -33,3 +33,21 @@ function stopAllAudio() {
         audio.currentTime = 0; // Reinicia los audios
     });
 }
+
+function nextPage() {
+    if (currentPage < totalPages) {
+        stopAllAudio(); // Pausar y reiniciar audios
+        const page = document.getElementById(`page${currentPage}`);
+        page.classList.add('flipped');
+        currentPage++;
+    }
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        stopAllAudio(); // Pausar y reiniciar audios
+        currentPage--;
+        const page = document.getElementById(`page${currentPage}`);
+        page.classList.remove('flipped');
+    }
+}

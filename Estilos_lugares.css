@@ -1,59 +1,72 @@
-
 .book-container {
-    perspective: 1000px;
+  perspective: 1000px;
+  margin-block-end: 50px;
 }
 
-.book {/*Libro*/
-    width:550px;
-    height: 600px;
-    position: relative;
-    align-items: center;
-    justify-self: unset;
-    transform-style: preserve-3d;
-    transition: transform 1s;
+.book {
+  /*Libro*/
+  width: 550px;
+  height: 600px;
+  position: relative;
+  align-items: center;
+  justify-self: unset;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
-.page {/*´Perpectiva libro*/
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-origin: left;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-    background-color: #fff;
-    border: 1px solid #ccc;
+.page {
+  /*´Perpectiva libro*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  background-color: #ddd7d1;
+  border: 5px solid #362c1d;
+  border-radius: 10px;
 }
 
-.page .front-content, .page .back-content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
+
+.page .front-content,
+.page .back-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
 }
 
 .page .back-content {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .page.flipped {
-    transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .nav-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
+
+
 
 button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-img{
-    margin-top: 15px;
-height: 500px;
-width: 500px;
+img {
+  margin-top: 15px;
+  height: 500px;
+  width: 500px;
 }
+
+.front-content img {
+    margin-top: 15px;
+    height: 500px;
+    width: 500px;
+  }

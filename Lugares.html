@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Amor en los Tiempos Digitales</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Estilos_lugares.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Estilos_lugares.css" />
     <script>
-        $(document).ready(function () {
-          $('header').load('Header.html');
-          $('footer').load('Footer.html');
-        });
+      $(document).ready(function () {
+        $("header").load("Header.html");
+        $("footer").load("Footer.html");
+      });
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header></header>
     <section class="intro">
-        <h1>El Amor en los Tiempos Digitales</h1>
-        <h4>Lugares</h4>
+      <h1>El Amor en los Tiempos Digitales</h1>
+      <h4>Lugares</h4>
     </section>
 
     <div class="book-container">
         <div class="book">
             <!-- Portada -->
-            <div class="page" id="page1">
-                <div class="front-content">
-                    <img src="Img/Barco.png" alt="Imagen del Barco">
-                    <p>Descripción del Barco.</p>
-                </div>
-                <!-- Primera página -->
-                <div class="back-content">
-                    <h2>Título de la Página 1</h2>
-                    <p>Texto adicional sobre el barco.</p>
-                    <audio controls class="audio-player">
-                        <source src="Audios\Fermina 4.wav" type="audio/wav">
-                        Tu navegador no soporta el elemento de audio.
-                    </audio>
-                </div>
+            <div class="page portada" id="page1">
+              <div class="front-content">
+                  <img src="Img/Libro.jpg" alt="Imagen del Barco" />
+                  <p>Descripción del Barco.</p>
+              </div>
+              <div class="back-content">
+                <h2>Título de la Página 1</h2>
+                <p>Texto adicional sobre el barco.</p>
+                <audio controls class="audio-player">
+                  <source src="Audios/Fermina 4.wav" type="audio/wav" />
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </div>
             </div>
+          
             <!-- Segunda página -->
             <div class="page" id="page2">
-                <div class="front-content">
-                    <img src="Img/Barco.png" alt="Otra imagen del Barco">
-                    <p>Descripción adicional del Barco.</p>
-                </div>
-                
-                <div class="back-content">
-                    <h2>Título de la Página 2</h2>
-                    <p>Más detalles del barco.</p>
-                    <audio controls class="audio-player">
-                        <source src="Audios\Fermina 4.wav" type="audio/wav">
-                        Tu navegador no soporta el elemento de audio.
-                    </audio>
-                </div>
+              <div class="front-content">
+                <img src="Img\Tienda.png" alt="Otra imagen del Barco" />
+                <p>Descripción adicional del Barco.</p>
+              </div>
+              <div class="back-content">
+                <h2>Título de la Página 2</h2>
+                <p>Más detalles del barco.</p>
+                <audio controls class="audio-player">
+                  <source src="Audios/Fermina 4.wav" type="audio/wav" />
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </div>
             </div>
-
-            <!-- Tecer página -->
+          
+            <!-- Tercera página -->
             <div class="page" id="page3">
-                <div class="front-content">
-                    <img src="Img/Barco.png" alt="Otra imagen del Barco">
-                    <p>Descripción adicional del Barco.</p>
-                </div>
-                
-                <div class="back-content">
-                    <h2>Título de la Página 2</h2>
-                    <p>Más detalles del barco.</p>
-                    <audio controls>
-                        <source src="Audios\Fermina 4.wav" type="audio/wav">
-                        Tu navegador no soporta el elemento de audio.
-                    </audio>
-                </div>
+              <div class="front-content">
+                <img src="Img/Barco.png" alt="Otra imagen del Barco" />
+                <p>Descripción adicional del Barco.</p>
+              </div>
+              <div class="back-content">
+                <h2>Título de la Página 3</h2>
+                <p>Más detalles del barco.</p>
+                <audio controls>
+                  <source src="Audios/Fermina 4.wav" type="audio/wav" />
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+              </div>
             </div>
-        </div>
+          </div>
+      
     </div>
-    
+
     <!-- Botones de Navegación -->
     <div class="nav-buttons">
-        <button onclick="prevPage()">Página Anterior</button>
-        <button onclick="nextPage()">Página Siguiente</button>
+      <button onclick="prevPage()">Página Anterior</button>
+      <button onclick="nextPage()">Página Siguiente</button>
     </div>
 
     <script src="scripts.js"></script>
     <script src="Body.js"></script>
-</body>
-<footer></footer>
+  </body>
+  <footer></footer>
 </html>

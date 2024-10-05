@@ -1,14 +1,12 @@
 body {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'PMingLiU-ExtB', serif;
     background-color: #f2e8cf;
-    color: #000000;
-    margin: 50px;
-    padding: 20px;
+    margin-top: 50px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -21,10 +19,38 @@ body, button, a {
     top: 0;
     left: 0;
     width: 2500px;
-    height: 1500px;
+    height: 1350px;
     z-index: 1; /* Z-index bajo para estar detrás */
     background: linear-gradient(to bottom, rgb(246, 255, 204) 0%,rgb(255, 195, 223) 100%);
   }
+
+  /* La animación de desvanecimiento */
+  .fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Animación de aparición (fade in) */
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
 /*@media (min-width: 370px) and (max-width: 1280px) {

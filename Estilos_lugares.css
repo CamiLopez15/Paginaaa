@@ -1,72 +1,107 @@
-.book-container {
-  perspective: 1000px;
-  margin-block-end: 50px;
+*{
+  box-sizing: border-box;
 }
 
-.book {
-  /*Libro*/
-  width: 550px;
+.centered{
+  margin: auto;
+  width: max-content;
+}
+
+.flipbook{
+  margin: 3em auto;
+  width: 900px;
   height: 600px;
   position: relative;
-  align-items: center;
-  justify-self: unset;
   transform-style: preserve-3d;
-  transition: transform 1s;
+  perspective: 1000px;
 }
 
-.page {
-  /*´Perpectiva libro*/
+.flipbook .leaf{
+  position: absolute;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 50%;
+  background-color: #fff;
+  left: 50%;
+  transition: transform 1s;
+  transform: rotate3d(0,1,0,0deg);
+  transform-origin: left 0px;
+}
+
+.flipbook .leaf .page{
+  transform-style: preserve-3d;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  transform-origin: left;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  background-color: #ddd7d1;
-  border: 5px solid #362c1d;
-  border-radius: 10px;
+  top: 0;
 }
 
+.flipbook .leaf .page.front{
+  transform: rotate3d(0,1,0,0deg) translate3d(0,0,0.1px);
+}
 
-.page .front-content,
-.page .back-content {
+.flipbook .leaf .page.front:not(.external){
+  box-shadow: inset 5px 0px 5px -5px #0005;
+}
+
+.flipbook .leaf .page.back{
+  transform: rotate3d(0,1,0,180deg) translate3d(0,0,0.1px);
+}
+
+.flipbook .leaf .page.back:not(.external){
+  box-shadow: inset -5px 0px 5px -5px #0005;
+}
+
+.disable{
+  user-select: none;
+  opacity: 0.6;
+}
+
+.title{
+  text-align: center;
   width: 100%;
-  height: 100%;
+  padding: 0em, !important;
+  padding-top: 2em;
+}
+
+.page{
+  padding: 1em;
+}
+
+.page.front{
+  border-radius: 0em 1em 1em 0;
+}
+
+.page.back{
+  border-radius: 1em 0em 0em 1em;
+}
+
+.pageNumber{
+  font-size: 0.75em;
   position: absolute;
-  backface-visibility: hidden;
+  bottom: 0.5em;
 }
 
-.page .back-content {
-  transform: rotateY(180deg);
+.front .pageNumber{
+  right: 0.75em;
 }
 
-.page.flipped {
-  transform: rotateY(-180deg);
+.back .pageNumber{
+  left: 0.75em;
 }
 
-.nav-buttons {
+.contents-row{
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  flex-flow: row nowrap;
 }
 
-
-
-button {
-  padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 16px;
-  cursor: pointer;
+.contents-row .spacer{
+  flex: 1 1;
+  height: 1em;
+  border-bottom: 1px dashed #000;
 }
 
-img {
-  margin-top: 15px;
-  height: 500px;
-  width: 500px;
+.contents-row .text{
+  flex: 0 0 auto
 }
 
-.front-content img {
-    margin-top: 15px;
-    height: 500px;
-    width: 500px;
-  }

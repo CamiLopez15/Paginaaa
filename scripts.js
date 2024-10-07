@@ -61,13 +61,10 @@ class FlipBook{
                 this.turnPage(-1);
         });
     }
+    
 
 }
 var flipBook = new FlipBook(document.getElementById("flipbook"));
-
-
-
-
 function stopAllAudio() {
     $(".audio-player").each(function(index, audio) {
         audio.pause();
@@ -88,3 +85,7 @@ $(document).ready(function () {
     
     updateVisibility(); // Asegura que solo la primera página sea visible al inicio
 });
+
+
+
+

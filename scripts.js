@@ -65,27 +65,38 @@ class FlipBook{
 
 }
 var flipBook = new FlipBook(document.getElementById("flipbook"));
+
+
 function stopAllAudio() {
-    $(".audio-player").each(function(index, audio) {
-        audio.pause();
-        audio.currentTime = 0; // Reinicia los audios
+    $(".audio-player").each(function() {
+        this.pause();
+        this.currentTime = 0; // Reinicia el audio
     });
 }
 
-
-
-$(document).ready(function () {
-    // Asegura que solo un audio se reproduzca a la vez
-    $(".audio-player").on("play", function() {
-        $(".audio-player").not(this).each(function(index, audio) {
-            audio.pause();
-            audio.currentTime = 0; // Opcional, para reiniciar el audio pausado
-        });
-    });
-    
-    updateVisibility(); // Asegura que solo la primera página sea visible al inicio
+$(document).ready(function() {
+    console.log("jQuery está funcionando correctamente");
 });
 
+$(document).ready(function () {
+    // Reproducción de audio
+    $(".audio-player").on("play", function() {
+        console.log("Reproduciendo audio", $(this).attr("src"));
+        stopAllAudio();  // Detiene otros audios
+        $(this)[0].play();  // Reproduce el audio actual
+    });
 
+    // Detiene todos los audios cuando cambias de página
+    $("#nextPage, #prevPage").on("click", function() {
+        console.log("Página cambiada, deteniendo audios");
+        stopAllAudio();
+    });
+});
 
-
+// Función para detener todos los audios
+function stopAllAudio() {
+    $(".audio-player").each(function() {
+        this.pause();
+        this.currentTime = 0; // Reinicia el audio
+    });
+}

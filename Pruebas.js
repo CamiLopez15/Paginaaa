@@ -17,8 +17,8 @@ function randomNormal(o) {
   return e = a * Math.sqrt(-2 * Math.log(r) / r), t * e + l;
 }
 
-const NUM_FLOWERS = 600; // Number of flowers
-const FLOWER_SIZE = 0.7; // Size of flowers
+const NUM_FLOWERS = 400; // Number of flowers
+const FLOWER_SIZE = 1.0; // Size of flowers
 const SPEED = 20000; // Duration of flower movement in milliseconds
 
 let flowers = []; // Array to hold flower objects

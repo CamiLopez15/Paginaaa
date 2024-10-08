@@ -18,11 +18,14 @@ body, button, a {
     position: absolute; /* Para que ocupe el fondo */
     top: 0;
     left: 0;
-    width: 2500px;
-    height: 1350px;
-    z-index: 1; /* Z-index bajo para estar detrás */
-    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%,rgb(255, 195, 223) 100%);
-  }
+    width: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 100%; /* Asegurar que cubra toda la pantalla */
+    z-index: -1; /* Z-index negativo para estar siempre detrás */
+    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
+    pointer-events: none; /* Para evitar que interfiera con el contenido */
+}
+
+
 
   /* La animación de desvanecimiento */
   .fade-out {
@@ -74,7 +77,7 @@ body, button, a {
     
     --h-2-font-family: "PMingLiU-ExtB", serif;
     --h-2-font-weight: 400;
-    --h-2-font-size: 18px;
+    --h-2-font-size: 30px;
     --h-2-letter-spacing: 0px;
     --h-2-line-height: 30px;
     --h-2-font-style: normal;

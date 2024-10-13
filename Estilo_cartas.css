@@ -31,18 +31,37 @@
 
 .download-icon {
     position: absolute;
-    bottom: 20px;
-    right: 10px;
+    bottom: 15px;
+    right: 70px;
     font-size: 24px;
     text-decoration: none;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(245, 195, 195, 0.566);
     border-radius: 50%;
     padding: 5px;
     transition: background-color 0.3s;
 }
 
-.card1:hover .download-icon {
-    background-color: rgba(0, 0, 0, 0.8);
+.whatsapp-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(245, 195, 195, 0.566);
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-icon:hover {
+    background-color: rgba(248, 87, 87, 0.8);
     color: #fff;
 }
+
+.whatsapp-icon:hover   {
+    background-color: rgba(248, 87, 87, 0.8);
+    color: #fff;
+}
+

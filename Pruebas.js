@@ -1,3 +1,5 @@
+// FONDO DE FLORESSSSS
+
 // modified version of random-normal
 function normalPool(o) {
   var r = 0;

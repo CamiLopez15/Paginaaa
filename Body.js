@@ -1,3 +1,4 @@
+// ANIMACION DESVANECIDO 
 document.addEventListener("DOMContentLoaded", function () {
     // Añadir la clase fade-in al cargar la página
     document.body.classList.add('fade-in');

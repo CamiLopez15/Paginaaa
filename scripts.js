@@ -1,3 +1,4 @@
+// LIBROOOO DE LUGARES
 let currentPage = 1;
 const totalPages = 5; // Cambia esto según la cantidad de páginas en tu libro
 

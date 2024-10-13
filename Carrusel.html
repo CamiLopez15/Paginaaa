@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Amor en los Tiempos Digitales</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Carrusel.css">
+    <script>
+        $(document).ready(function () {
+          // Cargar el header desde header.html
+          $('Header').load('Header.html');
+          // Cargar el footer desde footer.html
+          $('Footer').load('Footer.html');
+        });
+      </script>
+</head>
+
+<body style="background-color: #C26D5E;"> <!-- Color de fondo específico -->
+    <header></header>
+
+    <section class="intro">
+        <h1>El Amor en los Tiempos Digitales</h1>
+        <h4>Historia de Fermina Daza</h4>
+    </section>
+    
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide" id="slide1">
+                <h2>Texto para el Barco</h2>
+                <p>Descripción sobre el barco y su significado en la historia.</p>
+                <audio controls>
+                    <source src="audio/barco.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+            <div class="carousel-slide" id="slide2">
+                <h2>Texto sobre Fermina Daza</h2>
+                <p>Descripción sobre Fermina Daza y su papel en la historia.</p>
+                <audio controls>
+                    <source src="audio/fermina.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+            <div class="carousel-slide" id="slide3">
+                <h2>Texto sobre Florentino Ariza</h2>
+                <p>Descripción sobre Florentino Ariza y su relación con Fermina.</p>
+                <audio controls>
+                    <source src="audio/florentino.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </div>
+        <div class="circle"></div>
+        <button class="prev" onclick="moveSlide(-1)">Anterior</button>
+        <button class="next" onclick="moveSlide(1)">Siguiente</button>
+    </div>
+    
+    
+    
+    <script src="Carrusel.js"></script>
+    <script src="Body.js"></script>
+    <script src="Pruebas.js"></script>
+</body>
+</html>

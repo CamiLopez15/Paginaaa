@@ -1,7 +1,6 @@
 .historiass {/*Separacion botones y personajes */
     display: flex;
-    justify-content: center;
-    gap: 200px;
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
 }
 
 .historia img {/*Imagenes personajes florentino*/
@@ -10,11 +9,10 @@
 }
 
 .historia1 img {/*Imagenes personajes fermina*/
-    margin-top: 5000000;
-    padding-top: 35px;
-    width:150px;
-    height: auto;
     display: flex;
-   
+    left: 700px; /* Ajusta la posición desde la izquierda */
+    width: 650px; /* O ajusta al tamaño deseado */
+    height: auto; /* Mantiene la proporción */
 }
+
 

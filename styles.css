@@ -173,7 +173,6 @@ button {
     border-style: none;
     color: #fffdd2;
     font-family: "PMingLiU-ExtB", serif;
-    cursor: url('Img/Cursor.png'), pointer; /* Aplicar cursor personalizado */
     position: relative;
     padding: 0px;
     overflow: hidden;

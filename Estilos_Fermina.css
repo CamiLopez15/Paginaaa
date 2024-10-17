@@ -43,3 +43,7 @@ audio {
     width: 100%;
     max-width: 300px;
 }
+
+.audio-control {
+    cursor: url('Img/Cursor5.1.png'), auto;
+}

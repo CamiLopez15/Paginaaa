@@ -11,8 +11,9 @@ body {
 }
 
 body, button, a, audio {
-    cursor: url('Img/Cursor5.1.png')16 16, auto;
+    cursor: url('Img/Cursor5.1.png'), auto;
 }
+
  
 #flower-canvas {
     position: absolute; /* Para que ocupe el fondo */

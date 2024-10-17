@@ -1,6 +1,7 @@
 .historiass {/*Separacion botones y personajes */
     display: flex;
     justify-content: center; /* Centra los elementos hijos horizontalmente */
+    gap: 100px; /* Ajusta el valor para definir el espacio entre los elementos */
 }
 
 .historia img {/*Imagenes personajes florentino*/
@@ -10,9 +11,19 @@
 
 .historia1 img {/*Imagenes personajes fermina*/
     display: flex;
-    left: 700px; /* Ajusta la posición desde la izquierda */
-    width: 650px; /* O ajusta al tamaño deseado */
-    height: auto; /* Mantiene la proporción */
+    left: 890px; /* Ajusta la posición desde la izquierda */
+    width: 318px; /* O ajusta al tamaño deseado */
+
 }
 
+#flower-canvas {
+    position: absolute; /* Para que ocupe el fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 995px; /* Asegurar que cubra toda la pantalla */
+    z-index: -1; /* Z-index negativo para estar siempre detrás */
+    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
+    pointer-events: none; /* Para evitar que interfiera con el contenido */
+}
 

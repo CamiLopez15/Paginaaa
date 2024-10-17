@@ -11,7 +11,7 @@ body {
 }
 
 body, button, a {
-    cursor: url('Img/Cursor3.png'), auto;
+    cursor: url('Img/Cursor5.png')16 16, auto;
 }
  
 #flower-canvas {
@@ -19,7 +19,7 @@ body, button, a {
     top: 0;
     left: 0;
     width: 100%; /* Asegurar que cubra toda la pantalla */
-    height: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 1350px; /* Asegurar que cubra toda la pantalla */
     z-index: -1; /* Z-index negativo para estar siempre detrás */
     background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
     pointer-events: none; /* Para evitar que interfiera con el contenido */
@@ -64,7 +64,7 @@ body, button, a {
     
     --h-2-font-family: "PMingLiU-ExtB", serif;
     --h-2-font-weight: 400;
-    --h-2-font-size: 30px;
+    --h-2-font-size: 40px;
     --h-2-letter-spacing: 0px;
     --h-2-line-height: 30px;
     --h-2-font-style: normal;
@@ -77,10 +77,10 @@ body, button, a {
     --h-3-font-style: normal;
     
     --h-4-font-family: "PMingLiU-ExtB", serif;
-    --h-4-font-weight: 700;
-    --h-4-font-size: 18px;
+    --h-4-font-weight: 900;
+    --h-4-font-size: 25px;
     --h-4-letter-spacing: 0px;
-    --h-4-line-height: 18px;
+    --h-4-line-height: normal;
     --h-4-font-style: normal;
     
     --h-5-font-family: "PMingLiU-ExtB", serif;

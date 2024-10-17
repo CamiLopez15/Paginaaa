@@ -1,3 +1,15 @@
+#flower-canvas {
+  position: absolute; /* Para que ocupe el fondo */
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegurar que cubra toda la pantalla */
+  height: 1100px; /* Asegurar que cubra toda la pantalla */
+  z-index: -1; /* Z-index negativo para estar siempre detrás */
+  background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
+  pointer-events: none; /* Para evitar que interfiera con el contenido */
+}
+
+
 *{
   box-sizing: border-box;
 }
@@ -103,9 +115,36 @@
 .contents-row .text{
   flex: 0 0 auto
 }
+.page.front {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  height: 100vh; /* Ocupa toda la pantalla */
+}
 
 img{
   height: 400px;
   width: 400px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
+h1{
+  font-size: 50px;
+}
+.page.back h2{
+  font-size: 40px;
+}
+.page.back p{
+  font-size: 20px;
+}
+
+.page.front.title.external h1 {
+  font-size: 100px;
+  padding: 60px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}

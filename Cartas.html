@@ -6,8 +6,7 @@
     <title>El Amor en los Tiempos Digitales</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Estilo_cartas.css">
-
+    <link rel="stylesheet" href="Carrusel.css">
     <script>
         $(document).ready(function () {
           // Cargar el header desde header.html
@@ -15,19 +14,19 @@
           // Cargar el footer desde footer.html
           $('Footer').load('Footer.html');
         });
-    </script>
+      </script>
 </head>
-<body>
-    <canvas id="flower-canvas"></canvas>
+
+<body> <!-- Color de fondo específico -->
     <header></header>
 
-    <main>
-        <section class="intro">
-            <h1>El Amor en los Tiempos Digitales</h1>
-            <h4>Fragmentos de cartas</h4>
-        </section>
+    <section class="intro">
+        <h1>El Amor en los Tiempos Digitales</h1>
+        <h4>Fragmentos de cartas</h4>
+    </section>
 
-        <div class="zigzag-container">
+    <div class="slider">
+        <div class="item">
             <div class="card1">
                 <img src="Cartass/Carta1.jpg" alt="Carta #1">
                 <div class="buttons">
@@ -35,40 +34,58 @@
                     <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta1.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
                 </div>
             </div>
+        </div>
+        <div class="item">
             <div class="card1">
-                <img src="Cartass/Carta2.jpg" alt="Carta #2">
+                <img src="Cartass/Carta2.jpg" alt="Carta #1">
                 <div class="buttons">
-                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta2.jpg', 'Carta2.jpg')" class="download-icon">&#x1F4BE;</a>
-                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta2.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="Cartass/Carta3.jpg" alt="Carta #3">
-                <div class="buttons">
-                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta3.jpg', 'Carta3.jpg')" class="download-icon">&#x1F4BE;</a>
-                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta3.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="Cartass/Carta4.jpg" alt="Carta #4">
-                <div class="buttons">
-                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta4.jpg', 'Carta4.jpg')" class="download-icon">&#x1F4BE;</a>
-                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta4.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
-                </div>
-            </div>
-            <div class="card1">
-                <img src="Cartass/Carta5.jpg" alt="Carta #5">
-                <div class="buttons">
-                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta5.jpg', 'Carta5.jpg')" class="download-icon">&#x1F4BE;</a>
-                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta5.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
+                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta1.jpg', 'Carta1.jpg')" class="download-icon">&#x1F4BE;</a>
+                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta1.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
                 </div>
             </div>
         </div>
-
-    </main>
+        <div class="item">
+            <div class="card1">
+                <img src="Cartass/Carta3.jpg" alt="Carta #1">
+                <div class="buttons">
+                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta1.jpg', 'Carta1.jpg')" class="download-icon">&#x1F4BE;</a>
+                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta1.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card1">
+                <img src="Cartass/Carta4.jpg" alt="Carta #1">
+                <div class="buttons">
+                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta1.jpg', 'Carta1.jpg')" class="download-icon">&#x1F4BE;</a>
+                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta1.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card1">
+                <img src="Cartass/Carta5.jpg" alt="Carta #1">
+                <div class="buttons">
+                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta1.jpg', 'Carta1.jpg')" class="download-icon">&#x1F4BE;</a>
+                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta1.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card1">
+                <img src="Cartass/Carta6.jpg" alt="Carta #1">
+                <div class="buttons">
+                    <a href="javascript:void(0)" onclick="downloadImage('Cartass/Carta1.jpg', 'Carta1.jpg')" class="download-icon">&#x1F4BE;</a>
+                    <a href="javascript:void(0)" onclick="shareOnWhatsApp('Cartass/Carta1.jpg')" class="whatsapp-icon">&#x1F4F2;</a>
+                </div>
+            </div>
+        </div>
+        <button id="next">></button>
+        <button id="prev"><</button>
+    </div>
+    
+    <script src="Carrusel.js"></script>
     <script src="Body.js"></script>
-    <script src="Cartas.js"></script>
-    <script src="Fondo_Flores.js"></script>
-    <footer></footer>
+    <script src="Pruebas.js"></script>
 </body>
 </html>

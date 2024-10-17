@@ -1,39 +1,35 @@
-.zigzag-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.slider{
     position: relative;
-}
-
-.card1 {
-    position: relative;
-    width: 500px;
-    margin: 0;
-}
-
-.card1:nth-child(odd) {
-    align-self: flex-start;
-    margin-left: 500px;
-}
-
-.card1:nth-child(even) {
-    align-self: flex-end;
-    margin-right: 500px;
-}
-
-.card1 img {
     width: 100%;
-    height: auto;
-    background-color: #fff;
-    border: 9px solid #d8d8d8;
-    border-radius: 8px;
+    height: 370px;
+    overflow: hidden;
+}
+.item{
+    position: absolute;
+    text-align: justify;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 230px);
+    top: 0;
+}
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 400px;
+}
+#next{
+    left: unset;
+    right: 400px;
 }
 
 .download-icon {
     position: absolute;
-    bottom: 15px;
-    right: 70px;
-    font-size: 24px;
+    right: 250px;
+    font-size: 30px;
     text-decoration: none;
     color: #333;
     background-color: rgba(245, 195, 195, 0.566);
@@ -44,9 +40,8 @@
 
 .whatsapp-icon {
     position: absolute;
-    bottom: 15px;
-    right: 10px;
-    font-size: 24px;
+    right: 160px;
+    font-size: 30px;
     text-decoration: none;
     color: #333;
     background-color: rgba(245, 195, 195, 0.566);

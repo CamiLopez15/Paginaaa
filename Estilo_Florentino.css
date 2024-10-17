@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%; /* Asegurar que cubra toda la pantalla */
-    height: 6800px; /* Asegurar que cubra toda la pantalla */
+    height: 6870px; /* Asegurar que cubra toda la pantalla */
     z-index: -1; /* Z-index negativo para estar siempre detrás */
     background: linear-gradient(to bottom, rgb(67, 154, 253) 0%, rgb(164, 226, 248) 100%);
     pointer-events: none; /* Para evitar que interfiera con el contenido */

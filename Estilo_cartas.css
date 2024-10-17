@@ -29,10 +29,10 @@
 .download-icon {
     position: absolute;
     right: 250px;
-    font-size: 30px;
+    font-size: 35px;
     text-decoration: none;
     color: #333;
-    background-color: rgba(245, 195, 195, 0.566);
+    background-color: rgba(247, 169, 169, 0.566);
     border-radius: 50%;
     padding: 5px;
     transition: background-color 0.3s;
@@ -41,10 +41,10 @@
 .whatsapp-icon {
     position: absolute;
     right: 160px;
-    font-size: 30px;
+    font-size: 35px;
     text-decoration: none;
     color: #333;
-    background-color: rgba(245, 195, 195, 0.566);
+    background-color: rgba(247, 169, 169, 0.566);
     border-radius: 50%;
     padding: 5px;
     transition: background-color 0.3s;

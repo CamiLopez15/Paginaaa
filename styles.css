@@ -10,8 +10,8 @@ body {
     text-align: center;
 }
 
-body, button, a {
-    cursor: url('Img/Cursor5.png')16 16, auto;
+body, button, a, audio {
+    cursor: url('Img/Cursor5.1.png')16 16, auto;
 }
  
 #flower-canvas {

@@ -2,17 +2,13 @@ let items = document.querySelectorAll('.slider .item');
     let next = document.getElementById('next');
     let prev = document.getElementById('prev');
     
-    let active = 3;
+    let active = 0;
     function loadShow(){
         let stt = 0;
         items[active].style.transform = `none`;
         items[active].style.zIndex = 1;
         items[active].style.filter = 'none';
         items[active].style.opacity = 1;
-
-        // Pausar todos los audios cuando se cambia de slide
-        pauseAllAudios();
-
 
         for(var i = active + 1; i < items.length; i++){
             stt++;
@@ -30,15 +26,7 @@ let items = document.querySelectorAll('.slider .item');
             items[i].style.opacity = stt > 2 ? 0 : 0.6;
         }
     }
-    function pauseAllAudios() {
-        const audios = document.querySelectorAll('audio');
-        audios.forEach(audio => {
-            audio.pause();
-            audio.currentTime = 0;  // Reiniciar el audio al inicio
-        });
-    }
-    
-    
+ 
     loadShow();
     next.onclick = function(){
         active = active + 1 < items.length ? active + 1 : active;

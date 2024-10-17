@@ -4,7 +4,7 @@
     position: relative; /* Para que estos elementos se posicionen sobre el canvas */
     z-index: 2; /* Z-index alto para estar encima del canvas */
     color: rgb(0, 0, 0); /* Asegúrate de que el texto sea visible */
-    padding: 20px; /* Espaciado interno */
+
 }  
 .cards-container {
     width: 90%;
@@ -27,12 +27,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card p{
-    font-size: 20px;
+    font-size: 22px;
     color: rgb(86, 63, 30);
 }
 
 .card h2{
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
     color: rgb(86, 63, 30);
 }

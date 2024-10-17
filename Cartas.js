@@ -47,7 +47,7 @@ let items = document.querySelectorAll('.slider .item');
     
     function shareOnWhatsApp(imgPath) {
         var fullURL = "https://camilopez15.github.io/Paginaaa/" + imgPath;
-        var message = "Mira esta carta, te lo manda alguien especial <3: " + fullURL;
+        var message = "Mira esta carta, te la manda alguien especial 🫶🏼: " + fullURL;
         var whatsappWebURL = "https://web.whatsapp.com/send?text=" + encodeURIComponent(message);
         window.open(whatsappWebURL, '_blank');
     }

@@ -1,34 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Amor en los Tiempos Digitales</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Carrusel.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Carrusel.css" />
     <script>
-        $(document).ready(function () {
-          // Cargar el header desde header.html
-          $('Header').load('Header.html');
-          // Cargar el footer desde footer.html
-          $('Footer').load('Footer.html');
-        });
-      </script>
-</head>
+      $(document).ready(function () {
+        // Cargar el header desde header.html
+        $("Header").load("Header.html");
+        // Cargar el footer desde footer.html
+        $("Footer").load("Footer.html");
+      });
+    </script>
+  </head>
 
-<body> <!-- Color de fondo específico -->
+  <body>
+    <!-- Color de fondo específico -->
     <header></header>
 
     <section class="intro">
-        <h1>El Amor en los Tiempos Digitales</h1>
-        <h4>Fragmentos de cartas</h4>
+      <h1>El Amor en los Tiempos Digitales</h1>
+      <h4>Fragmentos de cartas</h4>
     </section>
 
+    <div class="container">
+      <button class="btn" onclick="openModal('modal1')">
+        El primer encuentro
+      </button>
+      <button class="btn" onclick="openModal('modal2')">La separación</button>
+      <button class="btn" onclick="openModal('modal3')">Promesa</button>
+      <button class="btn" onclick="openModal('modal4')">Adiós</button>
+    </div>
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>El primer encuentro</h2>
+        <p>Descripción del primer encuentro entre los personajes.</p>
+        <audio controls>
+          <source src="audio1.mp3" type="audio/mp3" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
 
-    
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>La separación</h2>
+        <p>Descripción de la separación entre los personajes.</p>
+        <audio controls>
+          <source src="audio2.mp3" type="audio/mp3" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Promesa</h2>
+        <p>Descripción de la promesa entre los personajes.</p>
+        <audio controls>
+          <source src="audio3.mp3" type="audio/mp3" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Adiós</h2>
+        <p>Descripción de la despedida entre los personajes.</p>
+        <audio controls>
+          <source src="audio4.mp3" type="audio/mp3" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+    </div>
+
     <script src="Carrusel.js"></script>
     <script src="Body.js"></script>
     <script src="Pruebas.js"></script>
-</body>
+  </body>
 </html>

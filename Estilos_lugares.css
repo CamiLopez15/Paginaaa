@@ -33,7 +33,9 @@
   transform-style: preserve-3d;
   height: 100%;
   width: 50%;
-  background-color: #fff;
+  background-image: url('Img/TexturaPa.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
   left: 50%;
   transition: transform 1s ease-in-out;
   transform: rotate3d(0,1,0,0deg);
@@ -148,3 +150,4 @@ h1{
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
 }
+

@@ -94,7 +94,6 @@
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
     background-color: white;
-    background-color: white;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -110,7 +109,7 @@
 }
 
 .close {
-    color: #aaa;
+    color: #a90202;
     float: right;
     font-size: 28px;
     font-weight: bold;

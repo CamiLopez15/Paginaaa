@@ -10,11 +10,14 @@
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(3, auto);   /* 3 filas */
+    gap: 20px; /* Espacio entre los botones */
+    justify-items: center; /* Centrar los botones horizontalmente */
+    align-items: center;   /* Centrar los botones verticalmente */
+    padding: 20px; /* Espaciado alrededor de la cuadrícula */
 }
-
 .btn {
     position: relative;
     width: 350px;

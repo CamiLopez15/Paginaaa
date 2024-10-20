@@ -11,7 +11,7 @@ body {
 }
 
 body, button, a, audio {
-    cursor: url('Img/Cursor5.2.png'), auto;
+     cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */
 }
 
  

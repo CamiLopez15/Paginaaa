@@ -126,3 +126,50 @@ audio {
     width: 100%;
     margin-top: 10px;
 }
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 1024px) {
+  
+    .btn {
+        width: 300px; /* Reducir el tamaño de los botones */
+        height: 120px;
+    }
+
+    .audio-player {
+        width: 300px; /* Ajustar el ancho del reproductor */
+    }
+
+    .modal-content {
+        margin: 15% auto;
+        max-width: 900px; /* Ajustar el tamaño máximo del modal */
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-rows: repeat(6, auto);
+        gap: 10px; /* Reducir el espacio entre botones */
+    }
+
+    .btn {
+        width: 250px; /* Reducir aún más el tamaño de los botones */
+        height: 100px;
+        margin: 10px;
+    }
+
+    .audio-player {
+        width: 250px; /* Ajustar el tamaño del reproductor de audio */
+    }
+
+    .modal-content {
+        margin: 30% auto;
+        max-width: 700px; /* Ajustar el tamaño del modal */
+        padding: 10px;
+    }
+
+    .modal-content p {
+        font-size: 18px; /* Reducir el tamaño del texto */
+    }
+}

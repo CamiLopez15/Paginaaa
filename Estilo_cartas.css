@@ -13,8 +13,9 @@
     left: calc(50% - 235px);
     top: 0;
 }
+
 #next, #prev{
-    position: absolute;
+    position: relative;
     top: 40%;
     font-size: xxx-large;
     font-family: monospace;

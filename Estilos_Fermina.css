@@ -86,6 +86,9 @@
 }
 
 .modal-content {
+    background-image: url('Img/TexturaPa.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
     background-color: white;
     margin: 5% auto;
     padding: 20px;

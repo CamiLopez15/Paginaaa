@@ -167,8 +167,8 @@ h1 {
 /* Estilos para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
   .flipbook {
-    width: 700px; /* Reduce el ancho del flipbook */
-    height: 450px; /* Reduce la altura del flipbook */
+    width: 750px; /* Reduce el ancho del flipbook */
+    height: 520px; /* Reduce la altura del flipbook */
   }
 
   .flipbook .leaf {
@@ -194,16 +194,12 @@ h1 {
   }
 
   .page.back p {
-    font-size: 16px; /* Ajusta el tamaño del párrafo */
+    font-size: 18px; /* Ajusta el tamaño del párrafo */
   }
 
   .page.front.title.external h1 {
     font-size: 80px; /* Reduce el tamaño del título de la página externa */
     padding: 40px; /* Ajusta el padding */
-  }
-
-  #flower-canvas {
-    height: 1000px; /* Reduce la altura del canvas de fondo */
   }
 
   .audio-player {
@@ -214,8 +210,8 @@ h1 {
 /* Estilos para pantallas de 780px o menos */
 @media (max-width: 780px) {
   .flipbook {
-    width: 500px; /* Reduce aún más el tamaño del flipbook */
-    height: 350px; /* Ajusta la altura del flipbook */
+    width: 620px; /* Reduce aún más el tamaño del flipbook */
+    height: 435px; /* Ajusta la altura del flipbook */
   }
 
   .flipbook .leaf {
@@ -241,20 +237,11 @@ h1 {
   }
 
   .page.back p {
-    font-size: 11px; /* Ajusta el tamaño del texto del párrafo */
+    font-size: 14px; /* Ajusta el tamaño del texto del párrafo */
   }
 
   .page.front.title.external h1 {
     font-size: 60px; /* Ajusta el tamaño del título de la página externa */
     padding: 30px; /* Ajusta el padding para pantallas pequeñas */
-  }
-
-  #flower-canvas {
-    height: 800px; /* Reduce la altura del canvas en pantallas más pequeñas */
-  }
-
-  .audio-player {
-    max-width: 100px; /* Reduce aún más el ancho del reproductor en pantallas pequeñas */
-    padding: 8px; /* Reduce el padding en pantallas pequeñas */
   }
 }

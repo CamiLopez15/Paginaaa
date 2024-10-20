@@ -1,178 +1,382 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Amor en los Tiempos Digitales</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Estilos_Fermina.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Estilos_Fermina.css" />
     <script>
-        $(document).ready(function () {
-          // Cargar el header desde header.html
-          $('Header').load('Header.html');
-          // Cargar el footer desde footer.html
-          $('Footer').load('Footer.html');
-        });
-      </script>
-</head>
+      $(document).ready(function () {
+        // Cargar el header desde header.html
+        $("Header").load("Header.html");
+        // Cargar el footer desde footer.html
+        $("Footer").load("Footer.html");
+      });
+    </script>
+  </head>
 
-<body> 
+  <body>
+    <!-- Color de fondo específico -->
     <canvas id="flower-canvas"></canvas>
     <header></header>
 
-    <main>
+    <section class="intro">
+      <h1>El Amor en los Tiempos Digitales</h1>
+      <h4>Historia de Fermina Daza</h4>
+    </section>
 
-        <section class="intro">
-            <h1>El Amor en los Tiempos Digitales</h1>
-            <h4>Historia de Fermina Daza</h4>
-        </section>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="slide">   
-   <!-- Primera Historia  \--> 
-        <div class="containerFer">
-            <h1>Fermina Daza - El Primer Encuentro con Florentino Ariza</h1>
-            <div class="contentFer">
-                <p>Estaba en el interior de mi casa, inmersa en mis quehaceres diarios, cuando sentí una leve perturbación en el aire, como si alguien estuviera observándome. Alcé la vista de la lectura que tenía entre manos y miré hacia la ventana, apenas consciente de lo que hacía. Fue entonces cuando lo vi.
-                    El joven estaba de pie en el jardín, junto a la puerta de la entrada sosteniendo un sobre en la mano. No parecía un mensajero común; había algo en su postura, en la forma en que sus ojos me seguían con un atrevimiento nervioso, que me desconcertó. Por un momento, nuestros ojos se encontraron, y sentí una extraña mezcla de incomodidad y curiosidad.
-                    No era que el joven fuera especialmente guapo o impresionante, pero había una intensidad en su mirada que me hizo sentir vulnerable, como si él estuviera intentando ver más allá de mi apariencia, como si quisiera descubrir algo de mi alma. Me sentí expuesta, casi avergonzada de haber sido captada en un momento tan mundano.
-                    Rápidamente, desvié la mirada y volví a concentrarme en la lectura, aunque ya no podía ignorar la presencia de aquel joven. Mientras mis dedos continuaban moviéndose sobre las hojas, mi mente vagaba hacia el extraño visitante. ¿Quién era? ¿Qué quería? ¿Por qué me miraba así?
-                    No pasó mucho tiempo antes de que la tía Escolástica, que había notado el intercambio de miradas, me susurrara al oído que aquel joven era Florentino Ariza, un empleado del telégrafo. Sentí un leve rubor en las mejillas, pero no permití que se reflejara en mi expresión. Guardé mi curiosidad bajo una máscara de indiferencia, pero algo en mi interior había cambiado.
-                    Ese día, aunque no lo mostré, me quedé pensando en el joven del jardín, en su mirada fija y en la extraña conexión que sentí, por un breve instante, a través de la ventana. Sin saberlo, ese encuentro había sembrado una semilla de curiosidad y destino que crecería con el tiempo, entrelazando mi vida con la de Florentino de maneras que ni yo ni él podíamos prever.
-                    </p>
-            </div>
-            <div class="audio-player">
-                <audio controls class="audio-control">
-                    <source src="Audios\HS1_mezcla.wav" type="audio/wav">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-            </div>
+    <div class="container">
+      <button class="btn" onclick="openModal('modal1')">
+        <h4>Primer encuentro</h4>
+      </button>
+      <button class="btn" onclick="openModal('modal2')">
+        <h4>La separación Forzada</h4>
+      </button>
+      <button class="btn" onclick="openModal('modal3')">
+        <h4>El Adiós</h4>
+      </button>
+      <button class="btn" onclick="openModal('modal4')">
+        <h4>La Serenata de Despedida</h4>
+      </button>
+      <button class="btn" onclick="openModal('modal5')">
+        <h4>La Reaparición de Florentino</h4>
+      </button>
+      <button class="btn" onclick="openModal('modal6')">
+        <h4>El Viaje en Barco</h4>
+      </button>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Fermina Daza - El Primer Encuentro con Florentino Ariza</h2>
+        <p>
+          Estaba en el interior de mi casa, inmersa en mis quehaceres diarios,
+          cuando sentí una leve perturbación en el aire, como si alguien
+          estuviera observándome. Alcé la vista de la lectura que tenía entre
+          manos y miré hacia la ventana, apenas consciente de lo que hacía. Fue
+          entonces cuando lo vi. El joven estaba de pie en el jardín, junto a la
+          puerta de la entrada sosteniendo un sobre en la mano. No parecía un
+          mensajero común; había algo en su postura, en la forma en que sus ojos
+          me seguían con un atrevimiento nervioso, que me desconcertó. Por un
+          momento, nuestros ojos se encontraron, y sentí una extraña mezcla de
+          incomodidad y curiosidad. No era que el joven fuera especialmente
+          guapo o impresionante, pero había una intensidad en su mirada que me
+          hizo sentir vulnerable, como si él estuviera intentando ver más allá
+          de mi apariencia, como si quisiera descubrir algo de mi alma. Me sentí
+          expuesta, casi avergonzada de haber sido captada en un momento tan
+          mundano. Rápidamente, desvié la mirada y volví a concentrarme en la
+          lectura, aunque ya no podía ignorar la presencia de aquel joven.
+          Mientras mis dedos continuaban moviéndose sobre las hojas, mi mente
+          vagaba hacia el extraño visitante. ¿Quién era? ¿Qué quería? ¿Por qué
+          me miraba así? No pasó mucho tiempo antes de que la tía Escolástica,
+          que había notado el intercambio de miradas, me susurrara al oído que
+          aquel joven era Florentino Ariza, un empleado del telégrafo. Sentí un
+          leve rubor en las mejillas, pero no permití que se reflejara en mi
+          expresión. Guardé mi curiosidad bajo una máscara de indiferencia, pero
+          algo en mi interior había cambiado. Ese día, aunque no lo mostré, me
+          quedé pensando en el joven del jardín, en su mirada fija y en la
+          extraña conexión que sentí, por un breve instante, a través de la
+          ventana. Sin saberlo, ese encuentro había sembrado una semilla de
+          curiosidad y destino que crecería con el tiempo, entrelazando mi vida
+          con la de Florentino de maneras que ni yo ni él podíamos prever.
+        </p>
+        <div class="audio-player">
+          <audio controls class="audio-control">
+            <source src="Audios\HS1_mezcla.wav" type="audio/wav" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
         </div>
+      </div>
+    </div>
 
-        <!-- Segunda Historia  \--> 
-        <div class="containerFer">
-            <h1>Fermina Daza - La Separación Forzada</h1>
-            <div class="contentFer">
-                <p>Estaba en mi habitación, releyendo por enésima vez una de las cartas de Florentino Ariza, cuando escuché la puerta de la casa cerrarse con fuerza. El sonido reverberó por los pasillos, llenando la casa de una tensión que sentí como una presión en el pecho. No era habitual que mi padre, un hombre de carácter severo y predecible, entrara en la casa con tanta violencia. Algo había sucedido.
-                    No pasó mucho tiempo antes de que mi padre irrumpiera en mi habitación, su rostro rígido de furia y determinación. Apenas tuve tiempo de esconder la carta bajo mi vestido antes de que él comenzara a gritar. "Haz el equipaje!!" me gritó, pregunté hacia dónde nos íbamos y su respuesta fue “A la muerte” yo, paralizada por el miedo, no pude articular una respuesta. Las palabras de mi padre eran duras, llenas de reproches, y aunque intenté defenderme, supe que no había nada que pudiera decir que aplacara su ira.
-                    Me sentí atrapada entre mi amor por Florentino y el respeto, casi temor, que sentía por mi padre. Sabía que no podía desobedecerlo sin enfrentar consecuencias graves, pero la idea de perder a Florentino, de ser arrancada de su vida tan bruscamente, me parecía insoportable.
-                    Mi padre, con la firmeza que lo caracterizaba, me anunció que nos iríamos de inmediato. No había margen para la discusión. La decisión estaba tomada, y no tenía más opción que acatarla. El viaje era un exilio forzado, una estrategia para mantenerme alejada de Florentino, para arrancar de raíz un amor que mi padre consideraba inapropiado e insensato.
-                    Durante el largo trayecto, permanecí en silencio, contemplando el paisaje que pasaba frente a mis ojos, pero sin realmente verlo. Mis pensamientos estaban con Florentino, con las cartas que ya no podría recibir ni responder, con la vida que se me escapaba de entre las manos. Me sentí impotente, despojada de mi voluntad, atrapada en una red de expectativas y obligaciones que no había elegido.
-                    </p>
-               
-            </div>
-            <div class="audio-player">
-                <audio controls class="audio-control">
-                    <source src="Audios\HS2_mezcla.wav" type="audio/wav">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-            </div>
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Fermina Daza - La Separación Forzada</h2>
+        <p>
+          Estaba en mi habitación, releyendo por enésima vez una de las cartas
+          de Florentino Ariza, cuando escuché la puerta de la casa cerrarse con
+          fuerza. El sonido reverberó por los pasillos, llenando la casa de una
+          tensión que sentí como una presión en el pecho. No era habitual que mi
+          padre, un hombre de carácter severo y predecible, entrara en la casa
+          con tanta violencia. Algo había sucedido. No pasó mucho tiempo antes
+          de que mi padre irrumpiera en mi habitación, su rostro rígido de furia
+          y determinación. Apenas tuve tiempo de esconder la carta bajo mi
+          vestido antes de que él comenzara a gritar. "Haz el equipaje!!" me
+          gritó, pregunté hacia dónde nos íbamos y su respuesta fue “A la
+          muerte” yo, paralizada por el miedo, no pude articular una respuesta.
+          Las palabras de mi padre eran duras, llenas de reproches, y aunque
+          intenté defenderme, supe que no había nada que pudiera decir que
+          aplacara su ira. Me sentí atrapada entre mi amor por Florentino y el
+          respeto, casi temor, que sentía por mi padre. Sabía que no podía
+          desobedecerlo sin enfrentar consecuencias graves, pero la idea de
+          perder a Florentino, de ser arrancada de su vida tan bruscamente, me
+          parecía insoportable. Mi padre, con la firmeza que lo caracterizaba,
+          me anunció que nos iríamos de inmediato. No había margen para la
+          discusión. La decisión estaba tomada, y no tenía más opción que
+          acatarla. El viaje era un exilio forzado, una estrategia para
+          mantenerme alejada de Florentino, para arrancar de raíz un amor que mi
+          padre consideraba inapropiado e insensato. Durante el largo trayecto,
+          permanecí en silencio, contemplando el paisaje que pasaba frente a mis
+          ojos, pero sin realmente verlo. Mis pensamientos estaban con
+          Florentino, con las cartas que ya no podría recibir ni responder, con
+          la vida que se me escapaba de entre las manos. Me sentí impotente,
+          despojada de mi voluntad, atrapada en una red de expectativas y
+          obligaciones que no había elegido.
+        </p>
+        <div class="audio-player">
+          <audio controls class="audio-control">
+            <source src="Audios\HS2_mezcla.wav" type="audio/wav" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
         </div>
+      </div>
+    </div>
 
-        <!-- Tercera Historia  \--> 
-        <div class="containerFer">
-            <h1>Fermina Daza - El Adiós a Florentino y la Decisión de su Futuro</h1>
-            <div class="contentFer">
-                <p>Había esperado con una mezcla de ansiedad y esperanza el regreso a mi ciudad, donde todo me recordaba a Florentino. Durante el tiempo en Valledupar, la distancia había sido dura, pero también me había dado espacio para reflexionar. A mi regreso, el rostro de Florentino ya no estaba tan nítido en mi mente como lo había estado antes, pero creí que, al verlo de nuevo, todos esos sentimientos resurgirían con la misma intensidad de antes.
-                    El día que finalmente lo vi, sentí una extraña frialdad en mi interior. Florentino estaba allí, frente a mí, tal como lo había imaginado tantas veces durante mi ausencia, pero algo había cambiado. Lo observé con detenimiento, intentando recuperar esa chispa, esa emoción que antes me había consumido. Pero, para mi sorpresa y desconcierto, no encontré nada. La figura de Florentino, que antes había ocupado tanto espacio en mi corazón, ahora me parecía ajena, casi irrelevante.
-                    Con una serenidad que no había esperado, decidí enfrentarme a la situación de frente. Me acerqué a Florentino y, con voz firme pero amable, le dije que lo mejor sería olvidar todo lo que había pasado entre nosotros. No había rabia en mis palabras, ni reproche; solo la constatación de que lo que alguna vez sentí había quedado en el pasado. Lo que había entre nosotros ya no existía, al menos no de la manera en que Florentino lo había imaginado.
-                    Florentino me miró con incredulidad, pero no dejé espacio para dudas. Le pedí que me olvidara, que dejara atrás lo que alguna vez los unió. Florentino se quedó en silencio, abrumado por la realidad que se imponía ante él, y ahí supe que, aunque doloroso, era lo correcto.
-                    Poco después, cuando el doctor Juvenal Urbino me propuso matrimonio, acepté. No fue una decisión tomada a la ligera. Urbino era un hombre respetado, con un futuro prometedor, y aunque nuestra relación no era apasionada, sabía que con él podría construir una vida estable y segura. Aceptar el compromiso con Urbino significaba dejar atrás definitivamente la parte de mi vida que había estado marcada por la incertidumbre y la idealización de un amor juvenil.
-                    Entendí que mi corazón había cambiado, y con él, mi visión del futuro. En Juvenal Urbino encontré una nueva dirección, una compañía que, aunque distinta a la que alguna vez imaginé, me ofrecía una nueva clase de seguridad y propósito. A partir de ese momento, mi vida tomaría un rumbo que yo misma había elegido, dejando atrás las sombras del pasado.
-                    </p>
-               
-            </div>
-            <div class="audio-player">
-                <audio controls class="audio-control">
-                    <source src="Audios\HS3_mezcla.wav" type="audio/wav">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-            </div>
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Fermina Daza - El Adiós a Florentino y la Decisión de su Futuro</h2>
+        <p>
+          Había esperado con una mezcla de ansiedad y esperanza el regreso a mi
+          ciudad, donde todo me recordaba a Florentino. Durante el tiempo en
+          Valledupar, la distancia había sido dura, pero también me había dado
+          espacio para reflexionar. A mi regreso, el rostro de Florentino ya no
+          estaba tan nítido en mi mente como lo había estado antes, pero creí
+          que, al verlo de nuevo, todos esos sentimientos resurgirían con la
+          misma intensidad de antes. El día que finalmente lo vi, sentí una
+          extraña frialdad en mi interior. Florentino estaba allí, frente a mí,
+          tal como lo había imaginado tantas veces durante mi ausencia, pero
+          algo había cambiado. Lo observé con detenimiento, intentando recuperar
+          esa chispa, esa emoción que antes me había consumido. Pero, para mi
+          sorpresa y desconcierto, no encontré nada. La figura de Florentino,
+          que antes había ocupado tanto espacio en mi corazón, ahora me parecía
+          ajena, casi irrelevante. Con una serenidad que no había esperado,
+          decidí enfrentarme a la situación de frente. Me acerqué a Florentino
+          y, con voz firme pero amable, le dije que lo mejor sería olvidar todo
+          lo que había pasado entre nosotros. No había rabia en mis palabras, ni
+          reproche; solo la constatación de que lo que alguna vez sentí había
+          quedado en el pasado. Lo que había entre nosotros ya no existía, al
+          menos no de la manera en que Florentino lo había imaginado. Florentino
+          me miró con incredulidad, pero no dejé espacio para dudas. Le pedí que
+          me olvidara, que dejara atrás lo que alguna vez los unió. Florentino
+          se quedó en silencio, abrumado por la realidad que se imponía ante él,
+          y ahí supe que, aunque doloroso, era lo correcto. Poco después, cuando
+          el doctor Juvenal Urbino me propuso matrimonio, acepté. No fue una
+          decisión tomada a la ligera. Urbino era un hombre respetado, con un
+          futuro prometedor, y aunque nuestra relación no era apasionada, sabía
+          que con él podría construir una vida estable y segura. Aceptar el
+          compromiso con Urbino significaba dejar atrás definitivamente la parte
+          de mi vida que había estado marcada por la incertidumbre y la
+          idealización de un amor juvenil. Entendí que mi corazón había
+          cambiado, y con él, mi visión del futuro. En Juvenal Urbino encontré
+          una nueva dirección, una compañía que, aunque distinta a la que alguna
+          vez imaginé, me ofrecía una nueva clase de seguridad y propósito. A
+          partir de ese momento, mi vida tomaría un rumbo que yo misma había
+          elegido, dejando atrás las sombras del pasado.
+        </p>
+        <div class="audio-player">
+          <audio controls class="audio-control">
+            <source src="Audios\HS3_mezcla.wav" type="audio/wav" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
         </div>
+      </div>
+    </div>
 
-        <!-- Cuarta Historia  \--> 
-        <div class="containerFer">
-            <h1>Fermina Daza - La Serenata de Despedida</h1>
-            <div class="contentFer">
-                <p>Ya había tomado mi decisión. Mi matrimonio con el doctor Juvenal Urbino estaba sellado, y con él, una nueva vida había comenzado a tomar forma. Sabía que con esa decisión también cerraba un capítulo de mi juventud, de los sueños y fantasías que había compartido, aunque solo en mi corazón, con Florentino Ariza. La noticia de nuestra boda se había esparcido por toda la ciudad, y yo estaba preparada para enfrentar las reacciones, pero lo que no había anticipado era cómo se sentiría cuando Florentino intentara despedirse.
-                    Esa noche, cuando la melodía de la serenata comenzó a sonar bajo mi ventana, supe de inmediato quién la había organizado. Reconocí la música, una melodía suave y melancólica que evocaba los recuerdos de las cartas y los encuentros furtivos con Florentino. Por un breve instante, me sentí transportada al pasado, a los días en que la idea de un amor apasionado e idealizado me había llenado de ilusión.
-                    Sin embargo, mientras la música flotaba en el aire nocturno, me mantuve firme en mi decisión. Podría haber salido, podría haberle dado una última mirada, pero sabía que hacerlo significaría abrir una puerta que ya había decidido cerrar. Sabía que Florentino esperaba verme, que esa serenata era su último intento por mantener vivo un amor que para él nunca había muerto. Pero para mí, esos sentimientos ya no tenían el mismo peso.
-                    Me quedé en la oscuridad de mi habitación, escuchando la música con una mezcla de nostalgia y determinación. No era fácil ignorar la voz del pasado, pero sabía que lo mejor era no salir, no darle a Florentino la esperanza de algo que ya no podía ofrecerle. Mi vida había tomado otro rumbo, y aunque sentí un leve dolor por lo que alguna vez fue, también sentí paz al haber hecho una elección que consideraba correcta.
-                    Mientras la serenata continuaba, me recosté en mi cama, intentando conciliar el sueño. La música era hermosa, pero en lugar de salir a recibirla, dejé que se desvaneciera en la noche, llevándose consigo las últimas notas de un amor que había decidido dejar atrás. No se trataba de crueldad, sino de una aceptación madura de que los sentimientos cambian y las vidas toman caminos diferentes.
-                    Finalmente, la serenata terminó, y con ella, supe que Florentino se había despedido, al igual que yo lo había hecho en mi corazón mucho antes. Sin embargo, no pude evitar sentir una pequeña punzada de melancolía al pensar en lo que pudo haber sido, aunque al mismo tiempo, me sentí segura de que había tomado la decisión correcta.
-                    En el silencio que siguió a la música, cerré los ojos, preparada para enfrentar el futuro que había elegido, dejando atrás los ecos de un amor juvenil que, aunque intenso, ya no tenía lugar en mi vida.
-                    </p>
-               
-            </div>
-            <div class="audio-player">
-                <audio controls class="audio-control">
-                    <source src="Audios\4 def.wav" type="audio/wav">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-            </div>
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Fermina Daza - La Serenata de Despedida</h2>
+        <p>
+          Ya había tomado mi decisión. Mi matrimonio con el doctor Juvenal
+          Urbino estaba sellado, y con él, una nueva vida había comenzado a
+          tomar forma. Sabía que con esa decisión también cerraba un capítulo de
+          mi juventud, de los sueños y fantasías que había compartido, aunque
+          solo en mi corazón, con Florentino Ariza. La noticia de nuestra boda
+          se había esparcido por toda la ciudad, y yo estaba preparada para
+          enfrentar las reacciones, pero lo que no había anticipado era cómo se
+          sentiría cuando Florentino intentara despedirse. Esa noche, cuando la
+          melodía de la serenata comenzó a sonar bajo mi ventana, supe de
+          inmediato quién la había organizado. Reconocí la música, una melodía
+          suave y melancólica que evocaba los recuerdos de las cartas y los
+          encuentros furtivos con Florentino. Por un breve instante, me sentí
+          transportada al pasado, a los días en que la idea de un amor
+          apasionado e idealizado me había llenado de ilusión. Sin embargo,
+          mientras la música flotaba en el aire nocturno, me mantuve firme en mi
+          decisión. Podría haber salido, podría haberle dado una última mirada,
+          pero sabía que hacerlo significaría abrir una puerta que ya había
+          decidido cerrar. Sabía que Florentino esperaba verme, que esa serenata
+          era su último intento por mantener vivo un amor que para él nunca
+          había muerto. Pero para mí, esos sentimientos ya no tenían el mismo
+          peso. Me quedé en la oscuridad de mi habitación, escuchando la música
+          con una mezcla de nostalgia y determinación. No era fácil ignorar la
+          voz del pasado, pero sabía que lo mejor era no salir, no darle a
+          Florentino la esperanza de algo que ya no podía ofrecerle. Mi vida
+          había tomado otro rumbo, y aunque sentí un leve dolor por lo que
+          alguna vez fue, también sentí paz al haber hecho una elección que
+          consideraba correcta. Mientras la serenata continuaba, me recosté en
+          mi cama, intentando conciliar el sueño. La música era hermosa, pero en
+          lugar de salir a recibirla, dejé que se desvaneciera en la noche,
+          llevándose consigo las últimas notas de un amor que había decidido
+          dejar atrás. No se trataba de crueldad, sino de una aceptación madura
+          de que los sentimientos cambian y las vidas toman caminos diferentes.
+          Finalmente, la serenata terminó, y con ella, supe que Florentino se
+          había despedido, al igual que yo lo había hecho en mi corazón mucho
+          antes. Sin embargo, no pude evitar sentir una pequeña punzada de
+          melancolía al pensar en lo que pudo haber sido, aunque al mismo
+          tiempo, me sentí segura de que había tomado la decisión correcta. En
+          el silencio que siguió a la música, cerré los ojos, preparada para
+          enfrentar el futuro que había elegido, dejando atrás los ecos de un
+          amor juvenil que, aunque intenso, ya no tenía lugar en mi vida.
+        </p>
+        <div class="audio-player">
+          <audio controls class="audio-control">
+            <source src="Audios\4 def.wav" type="audio/wav" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
         </div>
+      </div>
+    </div>
 
-        <!-- Quinta Historia  \--> 
-        <div class="containerFer">
-            <h1>Fermina Daza - La Reaparición de Florentino tras la Muerte de Juvenal Urbino</h1>
-            <div class="contentFer">
-                <p>Estaba sumida en el dolor, en una especie de entumecimiento que me había envuelto desde el momento en que mi esposo, el doctor Juvenal Urbino, había caído del árbol. La muerte había llegado tan repentinamente, en un día que había comenzado como cualquier otro, que apenas podía asimilar la realidad. Durante toda mi vida, Urbino había sido mi compañero, mi apoyo, el pilar sobre el que había construido mi existencia. Ahora, con él muerto, el vacío que sentía era inmenso y desconcertante.
-                    El día del funeral, mientras recibía las condolencias de familiares, amigos y conocidos, me esforzaba por mantener la compostura. Las palabras de consuelo parecían perderse en el aire, incapaces de penetrar la barrera de dolor que me envolvía. Todo parecía un sueño borroso, una pesadilla de la que deseaba despertar.
-                    Fue en medio de esa confusión y tristeza cuando vi a Florentino Ariza. Al principio, apenas lo reconocí. Los años no habían pasado en vano, y aunque algo en su postura y en sus ojos me resultaba familiar, tardé un momento en darme cuenta de quién era. Cuando finalmente lo hice, sentí una punzada de sorpresa y desorientación. ¿Qué hacía él allí, en medio de mi duelo?
-                    Florentino, con una seriedad solemne, se acercó, y antes de que pudiera procesar completamente su presencia, le dijo lo impensable: "Fermina, he esperado esta ocasión durante más de medio siglo, para repetirle una vez más el juramento de mi fidelidad eterna y mi amor para siempre."
-                    Las palabras cayeron sobre mí como un balde de agua fría. Me sentí asombrada, casi indignada por la audacia de Florentino. ¿Cómo se atrevía a hablar de amor en un momento como ese? Apenas podía comprender lo que estaba ocurriendo. Mientras lo escuchaba, mi mente luchaba por reconciliar la imagen del joven que una vez había conocido con el hombre mayor que ahora se paraba frente a mí, confesando un amor que había perdurado por más de medio siglo.
-                    Sentí una mezcla de emociones: confusión, sorpresa, e incluso una chispa de enojo. En mi estado de duelo, las palabras de Florentino parecían fuera de lugar e inapropiadas. Mi impulso inmediato fue maldecirlo por la profanación de mi casa cuando aún estaba caliente en la tumba el cadáver de mi esposo. Pero me lo impidió la dignidad de la rabia, así que le dije: “Lárgate. Y no te dejes ver nunca más en los años que te queden de vida…espero sean muy pocos.”
-                    Aunque lo despedí, algo se agitó en mi interior. La vida que había llevado durante tantos años había llegado a un fin abrupto, y con esa muerte, el pasado parecía cobrar vida de maneras inesperadas. Florentino se fue, pero yo sabía que ese encuentro no era el final. Mientras observaba su figura desaparecer en la distancia, una parte de mi comprendió que mi historia con él no había terminado, sino que, quizás, estaba a punto de comenzar de nuevo, aunque todavía no sabía cómo ni por qué.
-                    </p>
-               
-            </div>
-            <div class="audio-player">
-                <audio controls class="audio-control">
-                    <source src="Audios\5 def.wav" type="audio/wav">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-            </div>
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>
+          Fermina Daza - La Reaparición de Florentino tras la Muerte de Juvenal
+          Urbino
+        </h2>
+        <p>
+          Estaba sumida en el dolor, en una especie de entumecimiento que me
+          había envuelto desde el momento en que mi esposo, el doctor Juvenal
+          Urbino, había caído del árbol. La muerte había llegado tan
+          repentinamente, en un día que había comenzado como cualquier otro, que
+          apenas podía asimilar la realidad. Durante toda mi vida, Urbino había
+          sido mi compañero, mi apoyo, el pilar sobre el que había construido mi
+          existencia. Ahora, con él muerto, el vacío que sentía era inmenso y
+          desconcertante. El día del funeral, mientras recibía las condolencias
+          de familiares, amigos y conocidos, me esforzaba por mantener la
+          compostura. Las palabras de consuelo parecían perderse en el aire,
+          incapaces de penetrar la barrera de dolor que me envolvía. Todo
+          parecía un sueño borroso, una pesadilla de la que deseaba despertar.
+          Fue en medio de esa confusión y tristeza cuando vi a Florentino Ariza.
+          Al principio, apenas lo reconocí. Los años no habían pasado en vano, y
+          aunque algo en su postura y en sus ojos me resultaba familiar, tardé
+          un momento en darme cuenta de quién era. Cuando finalmente lo hice,
+          sentí una punzada de sorpresa y desorientación. ¿Qué hacía él allí, en
+          medio de mi duelo? Florentino, con una seriedad solemne, se acercó, y
+          antes de que pudiera procesar completamente su presencia, le dijo lo
+          impensable: "Fermina, he esperado esta ocasión durante más de medio
+          siglo, para repetirle una vez más el juramento de mi fidelidad eterna
+          y mi amor para siempre." Las palabras cayeron sobre mí como un balde
+          de agua fría. Me sentí asombrada, casi indignada por la audacia de
+          Florentino. ¿Cómo se atrevía a hablar de amor en un momento como ese?
+          Apenas podía comprender lo que estaba ocurriendo. Mientras lo
+          escuchaba, mi mente luchaba por reconciliar la imagen del joven que
+          una vez había conocido con el hombre mayor que ahora se paraba frente
+          a mí, confesando un amor que había perdurado por más de medio siglo.
+          Sentí una mezcla de emociones: confusión, sorpresa, e incluso una
+          chispa de enojo. En mi estado de duelo, las palabras de Florentino
+          parecían fuera de lugar e inapropiadas. Mi impulso inmediato fue
+          maldecirlo por la profanación de mi casa cuando aún estaba caliente en
+          la tumba el cadáver de mi esposo. Pero me lo impidió la dignidad de la
+          rabia, así que le dije: “Lárgate. Y no te dejes ver nunca más en los
+          años que te queden de vida…espero sean muy pocos.” Aunque lo despedí,
+          algo se agitó en mi interior. La vida que había llevado durante tantos
+          años había llegado a un fin abrupto, y con esa muerte, el pasado
+          parecía cobrar vida de maneras inesperadas. Florentino se fue, pero yo
+          sabía que ese encuentro no era el final. Mientras observaba su figura
+          desaparecer en la distancia, una parte de mi comprendió que mi
+          historia con él no había terminado, sino que, quizás, estaba a punto
+          de comenzar de nuevo, aunque todavía no sabía cómo ni por qué.
+        </p>
+        <div class="audio-player">
+          <audio controls class="audio-control">
+            <source src="Audios\5 def.wav" type="audio/wav" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
         </div>
+      </div>
+    </div>
 
-        <!-- Sexta Historia  \--> 
-        <div class="containerFer">
-            <h1>Fermina Daza - El Viaje en Barco con Florentino Ariza</h1>
-            <div class="contentFer">
-                <p>Ya en la etapa final de mi vida, había experimentado muchas cosas: el amor joven y apasionado, el matrimonio estable y respetable, la maternidad, el duelo y la soledad. Después de la muerte de mi esposo, Juvenal Urbino, pensé que el resto de mis días serían una tranquila y predecible espera del final. Pero la vida, siempre sorprendente, tenía otros planes.
-                    Luego del reencuentro con Florentino, el continuó visitándome y escribiendo, en un intento de recuperar mi confianza. Al principio, la idea de aceptar nuevamente a Florentino me parecía absurda, casi ridícula. Pero su persistencia, su constancia, y la manera en que se fue integrando en mi vida diaria me hicieron reconsiderar. Florentino no era ya el joven soñador que había conocido en mi juventud, sino un hombre maduro, con cicatrices y experiencias propias, pero con un amor por mí que había sobrevivido al tiempo.
-                    Cansada de la monotonía de mis días y la soledad en que vivía finalmente acepté la invitación de Florentino para viajar en un barco, Lo hice con la certeza de que estaba tomando una decisión que había postergado por demasiados años. Ya no había impedimento, ni temor al futuro. Había llegado a un punto en mi vida en el que me sentía libre de las expectativas y las obligaciones que habían marcado gran parte de mi existencia.
-                    Durante el viaje, redescubrimos un amor que, aunque nunca consumado en su juventud, había madurado y se había transformado en algo profundo y duradero. Ya no éramos los mismos que habían sido cuando todo comenzó, pero en esa madurez encontramos una conexión más sólida y significativa. Cada día en el barco era un redescubrimiento, un nuevo capítulo en una historia que nunca había sido escrita del todo.
-                    Sin embargo, al ir en puerto en puerto descubrí que había muchas personas que me conocían y sabían de mi historia con el doctor Juvenal Urbino, no podía permitir que poco tiempo después de su muerte me vieran al lado de otro hombre, eso no estaría bien para mi imagen y reputación. Así que no pude evitar volver al barco corriendo para no ser vista por nadie, Florentino notó mi malestar y luego de platicar con el capitán para solicitarle regresar a casa sin hacer ninguna parada por mercancía o pasajeros, la única solución que encontraron fue izar la bandera amarilla, que representaba enfermos de cólera en el barco lo que haría que nadie interrumpiera nuestro camino. 
-                    Sin embargo, en nuestro viaje las autoridades nos encontraron, pidieron informar la gravedad de la situación y permitir que las personas encargadas subieran al barco para valorar la situación, pues muchas veces izaban esta bandera para invadir impuesto. Entonces, solo pudimos escapar, era un viaje de ida y venida sin la certeza de un regreso a tierra firme, que nos duraría toda la vida. 
-                    </p>
-               
-            </div>
-            <div class="audio-player">
-                <audio controls class="audio-control">
-                    <source src="Audios\6 def.wav" type="audio/wav">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-            </div>
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <h2>Fermina Daza - El Viaje en Barco con Florentino Ariza</h2>
+        <p>
+          Ya en la etapa final de mi vida, había experimentado muchas cosas: el
+          amor joven y apasionado, el matrimonio estable y respetable, la
+          maternidad, el duelo y la soledad. Después de la muerte de mi esposo,
+          Juvenal Urbino, pensé que el resto de mis días serían una tranquila y
+          predecible espera del final. Pero la vida, siempre sorprendente, tenía
+          otros planes. Luego del reencuentro con Florentino, el continuó
+          visitándome y escribiendo, en un intento de recuperar mi confianza. Al
+          principio, la idea de aceptar nuevamente a Florentino me parecía
+          absurda, casi ridícula. Pero su persistencia, su constancia, y la
+          manera en que se fue integrando en mi vida diaria me hicieron
+          reconsiderar. Florentino no era ya el joven soñador que había conocido
+          en mi juventud, sino un hombre maduro, con cicatrices y experiencias
+          propias, pero con un amor por mí que había sobrevivido al tiempo.
+          Cansada de la monotonía de mis días y la soledad en que vivía
+          finalmente acepté la invitación de Florentino para viajar en un barco,
+          Lo hice con la certeza de que estaba tomando una decisión que había
+          postergado por demasiados años. Ya no había impedimento, ni temor al
+          futuro. Había llegado a un punto en mi vida en el que me sentía libre
+          de las expectativas y las obligaciones que habían marcado gran parte
+          de mi existencia. Durante el viaje, redescubrimos un amor que, aunque
+          nunca consumado en su juventud, había madurado y se había transformado
+          en algo profundo y duradero. Ya no éramos los mismos que habían sido
+          cuando todo comenzó, pero en esa madurez encontramos una conexión más
+          sólida y significativa. Cada día en el barco era un redescubrimiento,
+          un nuevo capítulo en una historia que nunca había sido escrita del
+          todo. Sin embargo, al ir en puerto en puerto descubrí que había muchas
+          personas que me conocían y sabían de mi historia con el doctor Juvenal
+          Urbino, no podía permitir que poco tiempo después de su muerte me
+          vieran al lado de otro hombre, eso no estaría bien para mi imagen y
+          reputación. Así que no pude evitar volver al barco corriendo para no
+          ser vista por nadie, Florentino notó mi malestar y luego de platicar
+          con el capitán para solicitarle regresar a casa sin hacer ninguna
+          parada por mercancía o pasajeros, la única solución que encontraron
+          fue izar la bandera amarilla, que representaba enfermos de cólera en
+          el barco lo que haría que nadie interrumpiera nuestro camino. Sin
+          embargo, en nuestro viaje las autoridades nos encontraron, pidieron
+          informar la gravedad de la situación y permitir que las personas
+          encargadas subieran al barco para valorar la situación, pues muchas
+          veces izaban esta bandera para invadir impuesto. Entonces, solo
+          pudimos escapar, era un viaje de ida y venida sin la certeza de un
+          regreso a tierra firme, que nos duraría toda la vida.
+        </p>
+        <div class="audio-player">
+          <audio controls class="audio-control">
+            <source src="Audios\6 def.wav" type="audio/wav" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
         </div>
+      </div>
+    </div>
 
+    <div class="wrapper">
+      <button onclick="location.href='Fermina.html'">
+        Conoce a Fermina Daza
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
 
-            <div class="wrapper">
-                <button onclick="location.href='Florentino.html'">
-                    Conoce a Florentino Ariza
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-
-
-        
-    </main>
-    <script src="Body.js"></script>
+    <script src="Carrusel.js"></script>
     <script src="Fondo_Flores.js"></script>
     <script src="Versione.js"></script>
-</body>
-<footer></footer>
+  </body>
+  <footer></footer>
 </html>

@@ -8,6 +8,13 @@
     background: linear-gradient(to bottom, #8bc0db, rgb(75, 120, 216) 100%);
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
+.btn button {
+    cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */
+}
+
+.container {
+    cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */
+}
 
 .container {
     display: grid;

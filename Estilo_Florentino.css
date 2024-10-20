@@ -12,7 +12,7 @@
     cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */
 }
 
-.container {
+.container,.audio-control  {
     cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */
 }
 

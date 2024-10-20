@@ -127,6 +127,26 @@ audio {
     margin-top: 10px;
 }
 
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 1440px) {
+  
+    .btn {
+        width: 300px; /* Reducir el tamaño de los botones */
+        height: 120px;
+    }
+
+    .audio-player {
+        width: 300px; /* Ajustar el ancho del reproductor */
+    }
+
+    .modal-content {
+        margin: 15% auto;
+        max-width: 900px; /* Ajustar el tamaño máximo del modal */
+        padding: 15px;
+    }
+}
+
 /* Media queries para pantallas más pequeñas */
 @media screen and (max-width: 1024px) {
   

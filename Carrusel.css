@@ -1,7 +1,13 @@
-body {
-    background-color: #8bc0db;
+#flower-canvas {
+    position: absolute; /* Para que ocupe el fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 7165px; /* Asegurar que cubra toda la pantalla */
+    z-index: -1; /* Z-index negativo para estar siempre detrás */
+    background: linear-gradient(to bottom, #8bc0db, rgb(75, 120, 216) 100%);
+    pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
-
 
 .container {
     display: flex;
@@ -11,14 +17,13 @@ body {
 
 .btn {
     position: relative;
-    width: 200px;
-    height: 120px;
+    width: 350px;
+    height: 140px;
     margin: 15px;
     background-color: white;
     border: none;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    font-size: 1.2rem;
     color: #333;
     display: flex;
     justify-content: center;
@@ -76,13 +81,18 @@ body {
 
 .modal-content {
     background-color: white;
-    margin: 15% auto;
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
+    max-width: 1110px;
+    max-height: 1000PX;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+}
+
+.modal-content p{
+ font-size: 22px;
 }
 
 .close {

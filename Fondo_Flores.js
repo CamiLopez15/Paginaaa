@@ -1,6 +1,6 @@
 // FONDO DE FLORESSSSS
 
-// modified version of random-normal
+// Modified version of random-normal
 function normalPool(o) {
   var r = 0;
   do {
@@ -43,7 +43,8 @@ function createFlower(canvas) {
       x: -2,
       y: -2,
       diameter: Math.max(0, randomNormal({ mean: FLOWER_SIZE, dev: FLOWER_SIZE / 2 })),
-      duration: randomNormal({ mean: SPEED, dev: SPEED * 0.1 }),
+      // Random duration for movement
+      duration: randomNormal({ mean: SPEED, dev: SPEED * 0.2 }), // Increased variability
       amplitude: randomNormal({ mean: 16, dev: 2 }),
       offsetY: randomNormal({ mean: 0, dev: 10 }),
       arc: Math.PI * 2,
@@ -53,11 +54,16 @@ function createFlower(canvas) {
 }
 
 function moveFlower(flower, canvas, time) {
+  // Calculate the progress using the current time and a randomly selected duration
   const progress = ((time - flower.startTime) % flower.duration) / flower.duration;
+  
+  // Ensure progress loops between 0 and 1
+  const progressNormalized = Math.min(progress, 1);
+
   return {
       ...flower,
-      x: progress,
-      y: ((Math.sin(progress * flower.arc) * flower.amplitude) + flower.offsetY),
+      x: progressNormalized,
+      y: ((Math.sin(progressNormalized * flower.arc) * flower.amplitude) + flower.offsetY),
   };
 }
 
@@ -127,6 +133,7 @@ function startAnimation() {
       });
   }
 }());
+
 
 /*
 // FONDO DE FLORES ARMONIOSO Y LENTO

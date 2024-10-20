@@ -27,3 +27,34 @@
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
 
+/* Estilos para pantallas de 1024px o menos */
+@media (max-width: 1024px) {
+    .historiass {
+        gap: 50px; /* Reduce el espacio entre los botones/personajes */
+    }
+
+    #flower-canvas {
+        background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 80%);
+        height: 100%; /* Ajusta la altura del canvas para evitar que ocupe demasiado espacio */
+    }
+}
+
+/* Estilos para pantallas de 780px o menos */
+@media (max-width: 780px) {
+    .historiass {
+        flex-direction: column; /* Cambia la disposición a columna para mejor visualización */
+        gap: 30px; /* Reduce aún más el espacio entre elementos */
+    }
+
+   
+
+    .historia1 img {
+        left: 0; /* Centra la imagen de Fermina */
+        margin: 0 auto; /* Asegura que esté centrada en pantallas pequeñas */
+    }
+
+    #flower-canvas {
+        background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 60%);
+        height: 100%; /* Ajusta aún más el tamaño para evitar ocupar demasiado espacio en pantallas pequeñas */
+    }
+}

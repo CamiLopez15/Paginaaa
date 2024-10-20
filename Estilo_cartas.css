@@ -77,3 +77,114 @@ img{
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
 
+/* Estilos para pantallas de 1024px o menos */
+@media (max-width: 1024px) {
+    .slider {
+        height: 320px; /* Reduce la altura del slider */
+    }
+
+    .item {
+        left: calc(50% - 200px); /* Ajusta la posición horizontal del item */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    img {
+        height: 240px; /* Reduce el tamaño de la imagen */
+        width: 380px; /* Reduce el ancho de la imagen */
+    }
+
+    #next, #prev{
+        position: relative;
+        top: 40%;
+        font-size: xxx-large;
+        font-family: monospace;
+        font-weight: bold;
+        left: 200px;
+    }
+    #next{
+        left: unset;
+        right: 200px;
+    }
+
+    .download-icon {
+        position: absolute;
+        right: 230px;
+        font-size: 35px;
+        text-decoration: none;
+        color: #333;
+        background-color: rgba(247, 169, 169, 0.566);
+        border-radius: 50%;
+        padding: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .whatsapp-icon {
+        position: absolute;
+        right: 150px;
+        font-size: 35px;
+        text-decoration: none;
+        color: #333;
+        background-color: rgba(247, 169, 169, 0.566);
+        border-radius: 50%;
+        padding: 5px;
+        transition: background-color 0.3s;
+    }
+}
+
+/* Estilos para pantallas de 780px o menos */
+@media (max-width: 780px) {
+    .slider {
+        height: 250px; /* Reduce aún más la altura del slider */
+    }
+
+    .item {
+        left: calc(50% - 160px); /* Ajusta la posición horizontal del item */
+        padding: 10px; /* Reduce aún más el padding */
+    }
+
+    img {
+        height: 200px; /* Reduce aún más el tamaño de la imagen */
+        width: 300px; /* Ajusta el ancho de la imagen */
+    }
+
+    #next, #prev{
+        position: relative;
+        top: 40%;
+        font-size: xxx-large;
+        font-family: monospace;
+        font-weight: bold;
+        left: 170px;
+    }
+    #next{
+        left: unset;
+        right: 170px;
+    }
+
+    .download-icon {
+        position: absolute;
+        right: 180px;
+        font-size: 35px;
+        text-decoration: none;
+        color: #333;
+        background-color: rgba(247, 169, 169, 0.566);
+        border-radius: 50%;
+        padding: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .whatsapp-icon {
+        position: absolute;
+        right: 100px;
+        font-size: 35px;
+        text-decoration: none;
+        color: #333;
+        background-color: rgba(247, 169, 169, 0.566);
+        border-radius: 50%;
+        padding: 5px;
+        transition: background-color 0.3s;
+    }
+
+    #flower-canvas {
+        background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 70%); /* Ajusta el fondo para pantallas pequeñas */
+    }
+}

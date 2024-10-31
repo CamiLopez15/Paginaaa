@@ -1,3 +1,13 @@
+#flower-canvas {
+    position: absolute; /* Para que ocupe el fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 100%; /* Asegurar que cubra toda la pantalla */
+    z-index: -1; /* Z-index negativo para estar siempre detrás */
+    pointer-events: none; /* Para evitar que interfiera con el contenido */
+}
+
 .slider{
     position: relative;
     width: 100%;

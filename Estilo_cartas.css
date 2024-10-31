@@ -66,15 +66,7 @@ img{
     width: 450px;
 }
 
-#flower-canvas {
-    position: absolute; /* Para que ocupe el fondo */
-    top: 0;
-    left: 0;
-    width: 100%; /* Asegurar que cubra toda la pantalla */
-    height: 100%; /* Asegurar que cubra toda la pantalla */
-    z-index: -1; /* Z-index negativo para estar siempre detrás */
-    pointer-events: none; /* Para evitar que interfiera con el contenido */
-}
+
 
 /* Estilos para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
@@ -183,7 +175,4 @@ img{
         transition: background-color 0.3s;
     }
 
-    #flower-canvas {
-        background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 70%); /* Ajusta el fondo para pantallas pequeñas */
-    }
 }

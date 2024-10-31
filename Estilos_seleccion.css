@@ -33,7 +33,6 @@
     }
 
     #flower-canvas {
-        background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 80%);
         height: 100%; /* Ajusta la altura del canvas para evitar que ocupe demasiado espacio */
     }
 }
@@ -53,7 +52,6 @@
     }
 
     #flower-canvas {
-        background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 60%);
         height: 100%; /* Ajusta aún más el tamaño para evitar ocupar demasiado espacio en pantallas pequeñas */
     }
 }

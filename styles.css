@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'PMingLiU-ExtB', serif;
-    background-color: #f2e8cf;
+    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
     margin-top: 50px;
     padding-top: 20px;
     text-align: center;
@@ -22,7 +22,6 @@ body, button, a, audio {
     width: 100%; /* Asegurar que cubra toda la pantalla */
     height: 1430px; /* Asegurar que cubra toda la pantalla */
     z-index: -1; /* Z-index negativo para estar siempre detrás */
-    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
 

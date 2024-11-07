@@ -6,7 +6,8 @@
 
 .historia img {/*Imagenes personajes florentino*/
     display: flex;
-    margin: 0 auto;
+    left: 890px; /* Ajusta la posición desde la izquierda */
+    width: 346px; /* O ajusta al tamaño deseado */
 }
 
 .historia1 img {/*Imagenes personajes fermina*/
@@ -16,25 +17,13 @@
 
 }
 
-#flower-canvas {
-    position: absolute; /* Para que ocupe el fondo */
-    top: 0;
-    left: 0;
-    width: 100%; /* Asegurar que cubra toda la pantalla */
-    height: 100%; /* Asegurar que cubra toda la pantalla */
-    z-index: -1; /* Z-index negativo para estar siempre detrás */
-    pointer-events: none; /* Para evitar que interfiera con el contenido */
-}
-
 /* Estilos para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
     .historiass {
         gap: 50px; /* Reduce el espacio entre los botones/personajes */
     }
 
-    #flower-canvas {
-        height: 100%; /* Ajusta la altura del canvas para evitar que ocupe demasiado espacio */
-    }
+    
 }
 
 /* Estilos para pantallas de 780px o menos */
@@ -44,14 +33,15 @@
         gap: 30px; /* Reduce aún más el espacio entre elementos */
     }
 
-   
+    .historia img {
+        left: 0; /* Centra la imagen de Fermina */
+        margin: 0 auto; /* Asegura que esté centrada en pantallas pequeñas */
+    }
 
     .historia1 img {
         left: 0; /* Centra la imagen de Fermina */
         margin: 0 auto; /* Asegura que esté centrada en pantallas pequeñas */
     }
 
-    #flower-canvas {
-        height: 100%; /* Ajusta aún más el tamaño para evitar ocupar demasiado espacio en pantallas pequeñas */
-    }
+
 }

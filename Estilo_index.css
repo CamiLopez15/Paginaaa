@@ -1,5 +1,16 @@
 /*Cuerpo de principal*/
- 
+#flower-canvas {
+    position: absolute; /* Para que ocupe el fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 1400px; /* Asegurar que cubra toda la pantalla */
+    z-index: -1; /* Z-index negativo para estar siempre detrás */
+    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
+    margin-top: 50px;
+    pointer-events: none; /* Para evitar que interfiera con el contenido */
+}
+
 .intro, .como-funciona {
     position: relative; /* Para que estos elementos se posicionen sobre el canvas */
     z-index: 2; /* Z-index alto para estar encima del canvas */
@@ -104,6 +115,13 @@
     .card p {
         font-size: 20px; /* Ajusta el tamaño del párrafo */
     }
+    #flower-canvas {
+        
+        width: 100%; /* Asegurar que cubra toda la pantalla */
+        height: 1850px; /* Asegurar que cubra toda la pantalla */
+        z-index: -1; /* Z-index negativo para estar siempre detrás */
+        background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
+       }
 }
 
 /* Estilos para pantallas de 780px o menos */

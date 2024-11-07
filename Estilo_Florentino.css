@@ -1,5 +1,5 @@
 
- 
+
 #flower-canvas {
     position: absolute; /* Para que ocupe el fondo */
     top: 0;
@@ -125,11 +125,47 @@
     cursor: pointer;
 }
 
-audio {
+.audio-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px; /* Bordes redondeados */
+   
+    width: 350px; /* Ancho del contenedor */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+    margin: 20px auto; /* Centrando el contenedor */
+}
+
+.audio-controls {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 
+.audio-control {
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+
+
+audio::-webkit-media-controls-panel {
+    background-color: #444; /* Color de fondo de los controles en navegadores basados en Webkit */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    filter: invert(1); /* Cambiar el color de los controles a claro */
+}
 
 /* Media queries para pantallas más pequeñas */
 @media screen and (max-width: 1440px) {

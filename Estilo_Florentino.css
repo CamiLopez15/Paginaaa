@@ -5,9 +5,11 @@
     width: 100%; /* Asegurar que cubra toda la pantalla */
     height: 100%; /* Asegurar que cubra toda la pantalla */
     z-index: -1; /* Z-index negativo para estar siempre detrás */
-    background: linear-gradient(to bottom, #8bc0db, rgb(75, 120, 216) 100%);
+    /*background: linear-gradient(to bottom, #8bc0db, rgb(75, 120, 216) 100%);*/
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
+
+
 .btn button {
     cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */
 }
@@ -145,6 +147,7 @@ audio {
         max-width: 900px; /* Ajustar el tamaño máximo del modal */
         padding: 15px;
     }
+
 }
 
 /* Media queries para pantallas más pequeñas */

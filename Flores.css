@@ -1,0 +1,258 @@
+
+/*Sol para los textos de fermina y florentino*/
+
+
+  /* La animación de desvanecimiento */
+  .fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Animación de aparición (fade in) */
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: #aa4a44;
+    border-style: none;
+    color: #fffdd2;
+    font-family: "PMingLiU-ExtB", serif;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+
+button span {
+    position: absolute;
+    display: block;
+}
+
+button span:nth-child(1) {
+    height: 3px;
+    width: 200px;
+    top: 0px;
+    left: -200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1 {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 200px;
+    }
+}
+
+button span:nth-child(2) {
+    height: 70px;
+    width: 3px;
+    top: -70px;
+    right: 0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+
+@keyframes span2 {
+    0% {
+        top: -70px;
+    }
+    100% {
+        top: 70px;
+    }
+}
+
+button span:nth-child(3) {
+    height: 3px;
+    width: 200px;
+    right: -200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes span3 {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 200px;
+    }
+}
+
+button span:nth-child(4) {
+    height: 70px;
+    width: 3px;
+    bottom: -70px;
+    left: 0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes span4 {
+    0% {
+        bottom: -70px;
+    }
+    100% {
+        bottom: 70px;
+    }
+}
+
+button:hover {
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+
+button:hover span {
+    animation-play-state: paused;
+}
+
+/*@media (min-width: 370px) and (max-width: 1280px) {
+    body {
+
+        flex-wrap: wrap;  
+        font-size: 16px;
+        padding: 20px;
+    }
+}*/
+
+/* ACHES H1... */
+
+:root {
+    --h-1-font-family: "PMingLiU-ExtB", serif;
+    --h-1-font-weight: 700;
+    --h-1-font-size: 50px;
+    --h-1-letter-spacing: 0px;
+    --h-1-line-height: 66px;
+    --h-1-font-style: normal;
+    
+    --h-2-font-family: "PMingLiU-ExtB", serif;
+    --h-2-font-weight: 400;
+    --h-2-font-size: 45px;
+    --h-2-letter-spacing: 0px;
+    --h-2-line-height: 30px;
+    --h-2-font-style: normal;
+    
+    --h-3-font-family: "PMingLiU-ExtB", serif;
+    --h-3-font-weight: 500;
+    --h-3-font-size: 16px;
+    --h-3-letter-spacing: 0px;
+    --h-3-line-height: 18px;
+    --h-3-font-style: normal;
+    
+    --h-4-font-family: "PMingLiU-ExtB", serif;
+    --h-4-font-weight: 700;
+    --h-4-font-size: 30px;
+    --h-4-letter-spacing: 0px;
+    --h-4-line-height: 66px;
+    --h-4-font-style: normal;
+    
+    --h-5-font-family: "PMingLiU-ExtB", serif;
+    --h-5-font-weight: 400;
+    --h-5-font-size: 18px;
+    --h-5-letter-spacing: 0px;
+    --h-5-line-height: 18px;
+    --h-5-font-style: normal;
+    
+    --h-6-font-family: "PMingLiU-ExtB", serif;
+    --h-6-font-weight: 900;
+    --h-6-font-size: 18px;
+    --h-6-letter-spacing: 1.75px;
+    --h-6-line-height: 66px;
+    --h-6-font-style: normal;
+  }
+  
+  h1 {
+    font-family: var(--h-1-font-family);
+    font-weight: var(--h-1-font-weight);
+    font-size: var(--h-1-font-size);
+    letter-spacing: var(--h-1-letter-spacing);
+    line-height: var(--h-1-line-height);
+    font-style: var(--h-1-font-style);
+  }
+  
+  h2 {
+    font-family: var(--h-2-font-family);
+    font-weight: var(--h-2-font-weight);
+    font-size: var(--h-2-font-size);
+    letter-spacing: var(--h-2-letter-spacing);
+    line-height: var(--h-2-line-height);
+    font-style: var(--h-2-font-style);
+  }
+  
+  h3 {
+    font-family: var(--h-3-font-family);
+    font-weight: var(--h-3-font-weight);
+    font-size: var(--h-3-font-size);
+    letter-spacing: var(--h-3-letter-spacing);
+    line-height: var(--h-3-line-height);
+    font-style: var(--h-3-font-style);
+  }
+  
+  h4 {
+    font-family: var(--h-4-font-family);
+    font-weight: var(--h-4-font-weight);
+    font-size: var(--h-4-font-size);
+    letter-spacing: var(--h-4-letter-spacing);
+    line-height: var(--h-4-line-height);
+    font-style: var(--h-4-font-style);
+  }
+  
+  h5 {
+    font-family: var(--h-5-font-family);
+    font-weight: var(--h-5-font-weight);
+    font-size: var(--h-5-font-size);
+    letter-spacing: var(--h-5-letter-spacing);
+    line-height: var(--h-5-line-height);
+    font-style: var(--h-5-font-style);
+  }
+  
+  h6 {
+    font-family: var(--h-6-font-family);
+    font-weight: var(--h-6-font-weight);
+    font-size: var(--h-6-font-size);
+    letter-spacing: var(--h-6-letter-spacing);
+    line-height: var(--h-6-line-height);
+    font-style: var(--h-6-font-style);
+  }
+
+
+

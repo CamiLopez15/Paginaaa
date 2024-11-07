@@ -1,3 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PMingLiU-ExtB', serif;
+    margin-top: 50px;
+    background: linear-gradient(to bottom, #fa94a5, rgb(165, 62, 72) 100%);
+    padding-top: 20px;
+    text-align: center;
+}
+
+body, button, a, audio {
+     cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */
+}
+
  
 #flower-canvas {
     position: absolute; /* Para que ocupe el fondo */
@@ -6,9 +22,9 @@
     width: 100%; /* Asegurar que cubra toda la pantalla */
     height: 100%; /* Asegurar que cubra toda la pantalla */
     z-index: -1; /* Z-index negativo para estar siempre detrás */
-    background: linear-gradient(to bottom, rgb(203, 76, 54) 0%, rgb(255, 195, 223) 100%);
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
+
 
 
 .container {

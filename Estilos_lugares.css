@@ -152,14 +152,47 @@ h1 {
 }
 
 .audio-player {
-  width: 100%; /* El audio ocupará el 100% del ancho del contenedor */
-  max-width: 600px; /* Limita el ancho máximo del reproductor de audio */
-  margin: 20px auto; /* Centra el reproductor de audio horizontalmente */
-  display: block;
-  background-color: rgba(247, 169, 169, 0.2); /* Color de fondo */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 10px; /* Añade padding para darle espacio interno */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px; /* Bordes redondeados */
+ 
+  width: 350px; /* Ancho del contenedor */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+  margin: 20px auto; /* Centrando el contenedor */
 }
+
+.audio-controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.audio-control {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+}
+
+
+
+
+audio::-webkit-media-controls-panel {
+  background-color: #444; /* Color de fondo de los controles en navegadores basados en Webkit */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+  filter: invert(1); /* Cambiar el color de los controles a claro */
+}
+
 
 /* Estilos para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
@@ -240,5 +273,17 @@ h1 {
   .page.front.title.external h1 {
     font-size: 60px; /* Ajusta el tamaño del título de la página externa */
     padding: 30px; /* Ajusta el padding para pantallas pequeñas */
+  }
+
+  .audio-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px; /* Bordes redondeados */
+   
+    width: 250px; /* Ancho del contenedor */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+    margin: 20px auto; /* Centrando el contenedor */
   }
 }

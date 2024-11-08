@@ -9,6 +9,8 @@
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
 body{
+    width: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 100%; /* Asegurar que cubra toda la pantalla */
     background: linear-gradient(to bottom, #fa94a5, rgb(165, 62, 72) 100%);
 }
 

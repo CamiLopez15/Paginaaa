@@ -6,8 +6,10 @@
     width: 100%; /* Asegurar que cubra toda la pantalla */
     height: 100%; /* Asegurar que cubra toda la pantalla */
     z-index: -1; /* Z-index negativo para estar siempre detrás */
-    background: linear-gradient(to bottom, #fa94a5, rgb(165, 62, 72) 100%);
     pointer-events: none; /* Para evitar que interfiera con el contenido */
+}
+body{
+    background: linear-gradient(to bottom, #fa94a5, rgb(165, 62, 72) 100%);
 }
 
 

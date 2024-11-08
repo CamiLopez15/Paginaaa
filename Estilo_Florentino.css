@@ -1,7 +1,5 @@
 
 body{
-    width: 100%; /* Asegurar que cubra toda la pantalla */
-    height: 100%; /* Asegurar que cubra toda la pantalla */
     background: linear-gradient(to bottom, #b9eaf0, rgb(190, 190, 195) 100%);
 }
 

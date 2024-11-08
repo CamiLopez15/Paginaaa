@@ -7,9 +7,15 @@
     width: 100%; /* Asegurar que cubra toda la pantalla */
     height: 100%; /* Asegurar que cubra toda la pantalla */
     z-index: -1; /* Z-index negativo para estar siempre detrás */
-    background: linear-gradient(to bottom, #5e9afa, rgb(52, 50, 193) 100%);
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
+
+body{
+    width: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 100%; /* Asegurar que cubra toda la pantalla */
+    background: linear-gradient(to bottom, #5e9afa, rgb(52, 50, 193) 100%);
+}
+
 
 .btn button {
     cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */

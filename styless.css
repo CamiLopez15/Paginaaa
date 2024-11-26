@@ -1,0 +1,28 @@
+/* Contenedor del video */
+#intro-video-container {
+    position: fixed; /* Hace que el video se mantenga fijo en la pantalla */
+    top: 50%;         /* Lo centra verticalmente */
+    left: 50%;        /* Lo centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar exactamente */
+    width: 90%;       /* Ancho del 90% de la ventana */
+    max-width: 1500px; /* Tamaño máximo, por ejemplo 1500px */
+    height: auto;     /* La altura se ajusta proporcionalmente al ancho */
+    background-color: black;
+    z-index: 1000;    /* Asegura que el video esté encima de todo */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+
+/* Estilos del video */
+#intro-video {
+    width: 100%;      /* El video ocupa el 100% del contenedor */
+    height: auto;     /* La altura se ajusta proporcionalmente */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+/* Contenido principal */
+#main-content {
+    display: none;    /* Inicialmente oculto hasta que termine el video */
+    padding: 20px;
+    text-align: center;
+}

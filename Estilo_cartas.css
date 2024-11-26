@@ -34,11 +34,12 @@
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
-    left: 400px;
+    left: 500px;
 }
+
 #next{
     left: unset;
-    right: 400px;
+    right: 500px;
 }
 
 .download-icon {

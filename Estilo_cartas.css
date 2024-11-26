@@ -105,11 +105,11 @@ img{
         font-size: xxx-large;
         font-family: monospace;
         font-weight: bold;
-        left: 200px;
+        left: 410px;
     }
     #next{
         left: unset;
-        right: 200px;
+        right: 400px;
     }
 
     .download-icon {
@@ -159,11 +159,11 @@ img{
         font-size: xxx-large;
         font-family: monospace;
         font-weight: bold;
-        left: 170px;
+        left: 360px;
     }
     #next{
         left: unset;
-        right: 170px;
+        right: 360px;
     }
 
     .download-icon {

@@ -48,4 +48,29 @@ window.addEventListener('DOMContentLoaded', function() {
             audioAmbiente.play();
         });
     });
+
+
+    // Obtener todos los audios de la página con la clase 'audio-player'
+    var audioPlayers = document.querySelectorAll('.audio-player');
+    
+    // Controlar cada uno de esos audios
+    audioPlayers.forEach(function(player) {
+        // Cuando un audio con la clase 'audio-player' empieza a reproducirse
+        player.addEventListener('play', function() {
+            // Pausar el audio ambiente
+            audioAmbiente.pause();
+        });
+
+        // Cuando un audio con la clase 'audio-player' se pausa o termina
+        player.addEventListener('pause', function() {
+            // Reanudar el audio ambiente
+            audioAmbiente.play();
+        });
+
+        // Si el audio en el contenedor termina (evento 'ended')
+        player.addEventListener('ended', function() {
+            // Reanudar el audio ambiente
+            audioAmbiente.play();
+        });
+    });
 });

@@ -4,14 +4,24 @@
     top: 50%;         /* Lo centra verticalmente */
     left: 50%;        /* Lo centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta para centrar exactamente */
-    width: 90%;       /* Ancho del 90% de la ventana */
+    width: 70%;       /* Ancho del 90% de la ventana */
     max-width: 1500px; /* Tamaño máximo, por ejemplo 1500px */
     height: auto;     /* La altura se ajusta proporcionalmente al ancho */
-    background-color: black;
     z-index: 1000;    /* Asegura que el video esté encima de todo */
     border-radius: 10px; /* Bordes redondeados opcionales */
 }
 
+#flower-canvas {
+    position: absolute; /* Para que ocupe el fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegurar que cubra toda la pantalla */
+    height: 1400px; /* Asegurar que cubra toda la pantalla */
+    z-index: -1; /* Z-index negativo para estar siempre detrás */
+    background: linear-gradient(to bottom, rgb(246, 255, 204) 0%, rgb(255, 195, 223) 100%);
+    margin-top: 50px;
+    pointer-events: none; /* Para evitar que interfiera con el contenido */
+}
 
 /* Estilos del video */
 #intro-video {
@@ -26,3 +36,26 @@
     padding: 20px;
     text-align: center;
 }
+
+
+/* Estilo para el botón */
+.Botoness {
+    position: fixed;
+    bottom: 20px; /* 20px desde el borde inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón en la pantalla */
+    z-index: 10; /* Asegura que el botón esté sobre el video */
+}
+
+.Botoness button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+

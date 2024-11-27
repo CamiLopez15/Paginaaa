@@ -71,7 +71,6 @@
     }
 
     .Botoness button {
-        font-size: 14px;   /* Reduce el tamaño de la fuente del botón */
         padding: 8px 16px; /* Reduce el tamaño del padding */
     }
 
@@ -96,7 +95,7 @@
     }
 
     .Botoness button {
-        font-size: 12px;   /* Reduce aún más el tamaño de la fuente del botón */
+      
         padding: 8px 12px; /* Reduce el tamaño del padding */
     }
 
@@ -117,7 +116,7 @@
     }
 
     .Botoness button {
-        font-size: 10px;   /* Reduce el tamaño de la fuente aún más */
+      
         padding: 6px 10px; /* Reduce el tamaño del padding */
     }
 

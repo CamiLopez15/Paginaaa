@@ -65,18 +65,7 @@
 
 /* Para pantallas de 1024px de ancho */
 @media (max-width: 1024px) {
-    #intro-video-container {
-        width: 80%;        /* Reduce el tamaño del video a un 80% */
-        max-width: 1200px; /* Maximo de 1200px */
-    }
 
-    .Botoness button {
-        padding: 8px 16px; /* Reduce el tamaño del padding */
-    }
-
-    #main-content {
-        padding: 15px;     /* Reduce el padding del contenido */
-    }
 }
 
 /* Para pantallas de 780px de ancho (por ejemplo, dispositivos tipo tablet) */
@@ -85,42 +74,37 @@
         height: 1000px;   /* Ajusta la altura del fondo */
     }
 
-    #intro-video-container {
-        width: 90%;        /* Reduce el video al 90% de la pantalla */
-        max-width: 1000px; /* Maximo de 1000px */
-    }
+/* Contenedor del video */
+#intro-video-container {
+    position: fixed; /* Hace que el video se mantenga fijo en la pantalla */
+    top: 50%;         /* Lo centra verticalmente */
+    left: 50%;        /* Lo centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar exactamente */
+    width: 70%;       /* Ancho del 90% de la ventana */
+    max-width: 1500px; /* Tamaño máximo, por ejemplo 1500px */
+    height: auto;     /* La altura se ajusta proporcionalmente al ancho */
+    z-index: 1000;    /* Asegura que el video esté encima de todo */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
 
-    .Botoness {
-        bottom: 10px;      /* Mueve el botón más cerca del borde inferior */
-    }
 
-    .Botoness button {
-      
-        padding: 8px 12px; /* Reduce el tamaño del padding */
-    }
+/* Estilos del video */
+#intro-video {
+    width: 100%;      /* El video ocupa el 100% del contenedor */
+    height: auto;     /* La altura se ajusta proporcionalmente */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
 
-    #main-content {
-        padding: 10px;     /* Reduce el padding del contenido */
-    }
+/* Contenido principal */
+#main-content {
+    display: none;    /* Inicialmente oculto hasta que termine el video */
+    padding: 20px;
+    text-align: center;
+}
+
 }
 
 /* Para pantallas más pequeñas (como teléfonos móviles) */
 @media (max-width: 480px) {
-    #intro-video-container {
-        width: 95%;        /* Ajusta el video al 95% del ancho */
-        max-width: 900px;  /* Maximo de 900px */
-    }
 
-    .Botoness {
-        bottom: 5px;       /* Mueve el botón más cerca del borde inferior */
-    }
-
-    .Botoness button {
-      
-        padding: 6px 10px; /* Reduce el tamaño del padding */
-    }
-
-    #main-content {
-        padding: 8px;      /* Ajuste de padding */
-    }
 }

@@ -11,6 +11,12 @@
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
 
+
+body, button, a, audio {
+    cursor: url('Img/Cursor5.2.png') 5 60, auto; /* Ajusta las coordenadas del hotspot */
+}
+
+
 /* Contenedor del video */
 #intro-video-container {
     position: fixed; /* Hace que el video se mantenga fijo en la pantalla */

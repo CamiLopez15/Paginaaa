@@ -9,5 +9,5 @@ video.onended = function() {
     videoContainer.style.display = 'none';
     
     // Redirigir a la página index.html
-    window.location.href = "index.html";
+    window.location.href = "Inicio.html";
 };

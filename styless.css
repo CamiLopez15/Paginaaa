@@ -65,8 +65,34 @@
 
 /* Para pantallas de 1024px de ancho */
 @media (max-width: 1024px) {
-
-}
+    #intro-video-container {
+        position: fixed; /* Hace que el video se mantenga fijo en la pantalla */
+        top: 50%;         /* Lo centra verticalmente */
+        left: 50%;        /* Lo centra horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta para centrar exactamente */
+        width: 30%;       /* Ancho del 90% de la ventana */
+        max-width: 1500px; /* Tamaño máximo, por ejemplo 1500px */
+        height: auto;     /* La altura se ajusta proporcionalmente al ancho */
+        z-index: 1000;    /* Asegura que el video esté encima de todo */
+        border-radius: 10px; /* Bordes redondeados opcionales */
+    }
+    
+    
+    /* Estilos del video */
+    #intro-video {
+        width: 100%;      /* El video ocupa el 100% del contenedor */
+        height: auto;     /* La altura se ajusta proporcionalmente */
+        border-radius: 10px; /* Bordes redondeados opcionales */
+    }
+    
+    /* Contenido principal */
+    #main-content {
+        display: none;    /* Inicialmente oculto hasta que termine el video */
+        padding: 20px;
+        text-align: center;
+    }
+    
+    }
 
 /* Para pantallas de 780px de ancho (por ejemplo, dispositivos tipo tablet) */
 @media (max-width: 780px) {
@@ -80,7 +106,7 @@
     top: 50%;         /* Lo centra verticalmente */
     left: 50%;        /* Lo centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta para centrar exactamente */
-    width: 40%;       /* Ancho del 90% de la ventana */
+    width: 20%;       /* Ancho del 90% de la ventana */
     max-width: 1500px; /* Tamaño máximo, por ejemplo 1500px */
     height: auto;     /* La altura se ajusta proporcionalmente al ancho */
     z-index: 1000;    /* Asegura que el video esté encima de todo */
@@ -104,7 +130,3 @@
 
 }
 
-/* Para pantallas más pequeñas (como teléfonos móviles) */
-@media (max-width: 480px) {
-
-}

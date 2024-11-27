@@ -12,6 +12,11 @@
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
 
+body{
+
+    background:  rgb(255, 195, 223) 100%;   
+}
+
 .slider{
     position: relative;
     width: 100%;

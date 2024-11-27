@@ -4,7 +4,7 @@
     top: 50%;         /* Lo centra verticalmente */
     left: 50%;        /* Lo centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta para centrar exactamente */
-    width: 70%;       /* Ancho del 90% de la ventana */
+    width: 60%;       /* Ancho del 90% de la ventana */
     max-width: 1500px; /* Tamaño máximo, por ejemplo 1500px */
     height: auto;     /* La altura se ajusta proporcionalmente al ancho */
     z-index: 1000;    /* Asegura que el video esté encima de todo */

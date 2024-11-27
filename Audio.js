@@ -25,24 +25,24 @@ window.addEventListener('DOMContentLoaded', function() {
         console.error("Error al cargar el archivo de audio ambiente");
     });
 
-    // Obtener todos los audios de la página con la clase 'audio-player'
-    var audioPlayers = document.querySelectorAll('.audio-player');
+    // Obtener todos los audios dentro de la clase '.audio-player' (puede incluir .audio-control u otros)
+    var audioPlayers = document.querySelectorAll('.audio-player .audio-control');
     
     // Controlar cada uno de esos audios
     audioPlayers.forEach(function(player) {
-        // Cuando un audio con la clase 'audio-player' empieza a reproducirse
+        // Cuando un audio con la clase 'audio-control' empieza a reproducirse
         player.addEventListener('play', function() {
             // Pausar el audio ambiente
             audioAmbiente.pause();
         });
 
-        // Cuando un audio con la clase 'audio-player' se pausa o termina
+        // Cuando un audio con la clase 'audio-control' se pausa
         player.addEventListener('pause', function() {
             // Reanudar el audio ambiente
             audioAmbiente.play();
         });
 
-        // Si el audio en el contenedor termina (evento 'ended')
+        // Si el audio con la clase 'audio-control' termina (evento 'ended')
         player.addEventListener('ended', function() {
             // Reanudar el audio ambiente
             audioAmbiente.play();

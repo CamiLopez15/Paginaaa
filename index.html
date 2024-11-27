@@ -3,88 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Amor en los Tiempos Digitales</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Página con Video Introductorio</title>
+    <link rel="stylesheet" href="styless.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Estilo_index.css">
-
-    <script>
-        $(document).ready(function () {
-          // Cargar el header desde header.html
-          $('Header').load('Header.html');
-          // Cargar el footer desde footer.html
-          $('footer').load('Footer.html');
-        });
-      </script>
-      
 </head>
-
-
 <body>
-    <header></header>
-
     <canvas id="flower-canvas"></canvas>
-        <section class="intro">
-            <h1>El Amor en los Tiempos Digitales</h1>
-            <h4>¿Cómo funciona?</h4>
-        </section>
+    <!-- Video introductorio -->
+    <div id="intro-video-container">
+        <video id="intro-video" autoplay controls>
+            <source src="Img\Video inicial.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>        
+    </div>
 
-        <section class="como-funciona">
-            
-            <div class="cards-container">
-                <div class="card" onclick="window.location.href='Versiones.html';">
-                    <div class="content">
-                        <h2>1. Versiones de la historia</h2>
-                        <p>Conoce la versión de la historia según Florentino o Fermina, disfruta de la narración de estos personajes, acercándote a su mundo y punto de vista.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="Img\Versiones-removebg-preview.png" alt="Icono de historia">
-                    </div>
-                </div>
-        
-                <div class="card" onclick="window.location.href='Lugares.html';">
-                    <div class="content">
-                        <h2>2. Lugares emblemáticos</h2>
-                        <p>Adéntrate en los lugares más representativos de la historia, a través de recorridos donde te acercarás más al relato.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="Img\Lugares-removebg-preview.png" alt="Icono de lugares">
-                    </div>
-                </div>
-        
-                <div class="card" onclick="window.location.href='Cartas.html';">
-                    <div class="content">
-                        <h2>3. Fragmentos de cartas</h2>
-                        <p>Lee partes de las cartas más simbólicas de Florentino y Fermina y anímate a compartirlas con tu persona especial en la plataforma de Whatsapp Web.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="Img\Cartas-removebg-preview.png" alt="Icono de cartas">
-                    </div>
-                </div>
+    <div class="Botoness">
+        <button onclick="location.href='Inicio.html'">
+            Omitir Video
+            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+        </button>
+    </div>
 
-                <div class="card" onclick="window.location.href='Versiones.html';">
-                    <div class="content">
-                        <h2>4. Experiencia Auditiva con Sonido 3D</h2>
-                        <p>En nuestra página, te recomendamos el uso de audífonos para aprovechar al máximo nuestra avanzada tecnología de sonido 3D. Esta innovadora tecnología te permite sumergirte en un entorno sonoro envolvente, donde cada detalle cobra vida y te transporta a nuevas dimensiones.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="Img\audifonos-inalambricos.png" alt="Icono de cartas">
-                    </div>
-                </div>
-            </div>
+    <script src="script.js"></script>
 
-            <div class="Botoness">
-                <button onclick="location.href='Versiones.html'">
-                    Siguiente Página
-                    <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                </button>
-            </div>
-        </section>
-        <script src="Fondo_Flores.js"></script>
-        <script src="Body.js"></script>
-    </body>
-<footer></footer>
+</body>
 </html>
+

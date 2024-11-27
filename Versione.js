@@ -42,4 +42,18 @@ audios.forEach(audio => {
             }
         });
     });
+
+    window.addEventListener('DOMContentLoaded', function() {
+        // Obtener cada uno de los audios por su id
+        var audio1 = document.getElementById('audio1');
+        var audio2 = document.getElementById('audio2');
+        var audio3 = document.getElementById('audio3');
+    
+        // Establecer el volumen de cada uno de esos audios
+        audio1.volume = 1;  // Establece el volumen al 100% (puedes poner valores entre 0 y 1)
+        audio2.volume = 1;  // Establece el volumen al 100% (puedes poner valores entre 0 y 1)
+        audio3.volume = 1;  // Establece el volumen al 100% (puedes poner valores entre 0 y 1)
+    });
+    
+    
 });

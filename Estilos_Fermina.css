@@ -9,7 +9,7 @@
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
 body{
-    background: linear-gradient(to bottom, #ffb8c4, rgba(205, 81, 93, 0.856) 100%);
+    background: linear-gradient(to bottom, #ffabb9, rgba(255, 80, 124, 0.856) 100%);
 }
 
 

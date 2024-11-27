@@ -1,14 +1,25 @@
 .Footer {
   color: rgb(0, 0, 0);
   display: flex;
-  padding: 0px 0px;
+  flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
+  padding: 20px 0;
   position: relative;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
-  justify-content:center;
+  width: 100%;
+  justify-content: flex-start; /* Alinea los elementos al inicio */
   align-items: center;
   z-index: 1000;
+  text-align: center; /* Centra el texto */
 }
 
+.Footer p {
+  margin: 5px 0; /* Espaciado entre las líneas */
+}
+
+.Footer .melodia {
+  font-size: 0.8em; /* Hace la frase más pequeña */
+  color: rgba(0, 0, 0, 0.7); /* Puedes ajustar el color si lo deseas */
+  margin-top: auto; /* Empuja el texto hacia la parte inferior */
+}

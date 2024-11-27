@@ -10,7 +10,10 @@
     pointer-events: none; /* Para evitar que interfiera con el contenido */
 }
 
+body{
 
+    background:  rgb(255, 195, 223) 100%;   
+}
 
 .historiass {/*Separacion botones y personajes */
     display: flex;
